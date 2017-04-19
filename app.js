@@ -5,15 +5,18 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var http = require("http");
+var fileSystem = require("fs");
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
 
+/*
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
+*/
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -27,7 +30,7 @@ app.use('/', routes);
 app.use('/users', users);
 
 // specify the port
-var port = process.env.PORT || 3002;
+var port = process.env.PORT || 3003;
 
 
 // catch 404 and forward to error handler
@@ -61,8 +64,21 @@ app.use(function(err, req, res, next) {
 });
 
 // create server at specified port
-http.createServer(app).listen(port,function(){
-   console.log("Hey I'm listening at "+ port);
+var server = http.createServer(function(req, resp){
+   fileSystem.readFile('./views/index.html',function(error,fileContent){
+       if(error){
+           resp.writeHead(500,{'Content-Type':'text/plain'});
+           resp.end('Error');
+       }
+       else{
+           resp.writeHead(200,{'Content-Type':'text/html'});
+           resp.write(fileContent);
+           resp.end();
+       }
+   });
 });
+
+server.listen(port);
+console.log('Listening at: localhost:'+port);
 
 module.exports = app;

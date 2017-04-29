@@ -1,5 +1,5 @@
 {
-  "name": "BeeAlert-Thesis",
+  "name": "beealert",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -12,6 +12,31 @@
     "express": "~4.13.4",
     "jade": "~1.11.0",
     "morgan": "~1.7.0",
-    "serve-favicon": "~2.3.0"
-  }
+    "serve-favicon": "~2.3.0",
+
+    "bcryptjs": "*",
+    "connect-flash": "*",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "mongodb": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*"
+  },
+  "description": "thesis",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlorinRusu/BeeAlert-Thesis.git"
+  },
+  "author": "Florin Rusu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FlorinRusu/BeeAlert-Thesis/issues"
+  },
+  "homepage": "https://github.com/FlorinRusu/BeeAlert-Thesis#readme"
 }

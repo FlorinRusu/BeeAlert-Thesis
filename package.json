@@ -6,25 +6,26 @@
     "start": "app.js"
   },
   "dependencies": {
+    "bcryptjs": "*",
     "body-parser": "~1.15.1",
+    "connect-flash": "*",
+    "consolidate": "^0.14.5",
     "cookie-parser": "~1.4.3",
     "debug": "~2.2.0",
+    "ejs": "^2.5.6",
     "express": "~4.13.4",
-    "jade": "~1.11.0",
-    "morgan": "~1.7.0",
-    "serve-favicon": "~2.3.0",
-
-    "bcryptjs": "*",
-    "connect-flash": "*",
     "express-handlebars": "*",
     "express-messages": "*",
     "express-session": "*",
     "express-validator": "*",
+    "jade": "~1.11.0",
     "mongodb": "*",
     "mongoose": "*",
+    "morgan": "~1.7.0",
     "passport": "*",
     "passport-http": "*",
-    "passport-local": "*"
+    "passport-local": "*",
+    "serve-favicon": "~2.3.0"
   },
   "description": "thesis",
   "main": "app.js",

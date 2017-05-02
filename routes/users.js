@@ -15,6 +15,7 @@ router.get('/login',function(req,res){
   res.render('login');
 });
 
+
 router.post('/register',function(req,res){
      var name = req.body.name;
      var email = req.body.email;

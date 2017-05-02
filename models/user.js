@@ -37,19 +37,17 @@ module.exports.getUserByUsername = function(username, callback){
     User.findOne(query, callback);
 };
 
-module.exports.getUserById = function(id, callback){
+module.exports.getUserById = function(id, callback) {
 
     User.findById(id, callback);
 };
 
 
-
-
-
+// Verify password eligibility
 module.exports.comparePassword = function(candidatePassword, hash, callback){
     bcrypt.compare(candidatePassword, hash, function(err, isMatch) {
         // res === true
         if(err)throw err;
         callback(null,isMatch);
     });
-}
+};

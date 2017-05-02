@@ -1,0 +1,309 @@
+html,
+body {
+    height: 100%;
+    padding: 0;
+    background: url(http://subtlepatterns.com/patterns/eight_horns.png);
+    overflow-x: hidden;
+    /* bottom scrollbar       background: repeat 0 0...   */
+}
+
+@font-face {
+    font-family: Giro;
+    src: url(../fonts/girolight.otf) format("opentype");
+}
+/*  top header */
+
+.header {
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 75px;
+    width: 100%;
+    z-index: 1;
+}
+/*  SEARCH bar   */
+
+#form-control:focus {
+    border-color: #fec20e;
+}
+
+#search-btn {
+    background-color: #fec20e;
+    outline: none;
+}
+
+#custom-search-input {
+    margin: 20px;
+    margin-left: 120px;
+}
+/*
+-   -   -   -   -   -   -
+DROP DOWN notification menu
+-   -   -   -   -   -   -  -*/
+
+.fa-bell {
+    cursor: pointer;
+}
+
+.ring-badge {
+    background-color: #fec20e;
+    border-radius: 50%;
+    color: black;
+    padding: 3px 5px;
+    font-size: 10px;
+    position: absolute;
+    /* Position the badge within the relatively positioned button */
+    top: 0px;
+    right: -5px;
+}
+
+.fa-bell .dropdown-menu {
+    display: block;
+    width: 180px;
+    background-color: #fcfcfc;
+}
+
+.logo {
+    margin-top: 7px;
+    margin-left: 31px;
+    width: 142px;
+    height: 58px;
+}
+
+.settings {
+    padding-top: 20px;
+    padding-left: 130px;
+    color: #3a2a28;
+}
+
+.setting-1 {
+    padding-top: 8px;
+    float: left;
+    width: 100px;
+}
+
+.setting-2,
+.setting-3,
+.setting-4 {
+    width: 40px;
+    float: left;
+    font-size: 25px;
+}
+/*  main content */
+
+.main {
+    padding-top: 85px;
+}
+/* <- left bar menu - */
+
+.menu {
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-nav {
+    color: #3a2a28;
+    outline: 0 !important;
+}
+
+.btn-nav .fa {
+    padding-top: 16px;
+    font-size: 45px;
+    text-align: center;
+    width: 75px;
+}
+
+.btn-group .btn-nav:hover {
+    color: #fec20e;
+    background-color: gray;
+}
+
+.sidebar-1 {
+    left: 10px;
+    position: fixed;
+    width: 8%;
+    float: left;
+    padding-right: 10px;
+}
+
+.header,
+.btn-nav,
+.inner-content,
+.inner-sidebar-2 {
+    background-color: rgba(252, 252, 252, 1);
+}
+
+.content {
+    position: relative;
+    float: left;
+    margin-left: 9.5%;
+    width: 65%;
+    padding-right: 15px;
+}
+
+.inner-content {
+    border-bottom: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.10);
+}
+
+.apa-canal {
+    width: 120px;
+    height: 120px;
+}
+
+.sidebar-2 {
+    right: 22px;
+    /*23px*/
+    position: fixed;
+    width: 25%;
+    float: left;
+}
+
+.inner-sidebar-2 {
+    border-radius: 5px;
+    min-height: 500px;
+}
+/* -    -   -   -   -    -    -   -    -
+             Chat design
+-    -    -   -   -   -   -   -   -   - */
+
+.chat_window {
+    position: absolute;
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    /*    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);*/
+    background-color: #f8f8f8;
+}
+
+.top_menu {
+    border-radius: 5px;
+    background-color: rgba(252, 252, 252, 1);
+    width: 100%;
+    padding: 20px 0 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.top_menu .title {
+    text-align: center;
+    color: #3a2a28;
+    font-size: 15px;
+}
+
+.messages {
+    background-color: rgba(197, 196, 196, 0.02);
+    position: relative;
+    list-style: none;
+    padding: 20px 10px 0 10px;
+    margin: 0;
+    height: 390px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.messages .message {
+    clear: both;
+    overflow: hidden;
+    padding-bottom: 10px;
+    transition: all 0.5s linear;
+    opacity: 0;
+}
+
+.messages .message.left .avatar {
+    background-color: rgba(245, 136, 110, 0.42);
+    float: left;
+}
+
+.messages .message.left .text_wrapper {
+    background-color: #fcfcfc;
+    margin-left: 20px;
+}
+
+.messages .message.left .text,
+.messages .message.right .text {
+    color: black
+}
+
+.messages .message.right .avatar {
+    background-color: rgba(253, 191, 104, 0.35);
+    float: right;
+}
+
+.messages .message.right .text_wrapper {
+    background-color: #fcfcfc;
+    margin-right: 20px;
+    float: right;
+}
+
+.messages .message.appeared {
+    opacity: 1;
+}
+
+.messages .message .avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: inline-block;
+}
+/* Message block */
+
+.messages .message .text_wrapper {
+    display: inline-block;
+    height: 50px;
+    padding: 15px;
+    border-radius: 6px;
+    max-width: 250px;
+    /* BORDER RADIUS*/
+    /* width: 150px;
+    min-width: 100px;*/
+    position: relative;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
+}
+
+.messages .message .text_wrapper>time {
+    color: #ccc;
+    font-size: 10px;
+    float: right;
+}
+/* Bottom block */
+
+.bottom_wrapper {
+    box-shadow: 50px 5px 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+    width: 100%;
+    background-color: rgba(252, 252, 252, 1);
+    padding: 20px 20px;
+    bottom: 0;
+}
+
+.message_input {
+    /*   width: 100%;*/
+    border-radius: 0px;
+}
+/*.message_input:focus {}*/
+/*   -   -   -   -   -   -   -
+    Resizing window
+-   -   -   -   -   -   -       */
+
+@media (min-width: 1381px) {
+    /*Styles for browsers larger than 1380*/
+    .content {
+        margin-left: 135px;
+        width: 67.5%;
+    }
+    .settings {
+        padding-left: 250px;
+    }
+}
+
+@media (min-width: 1920px) {
+    /*Styles fro browser smaller that 1979*/
+    .sidebar-2 {
+        right: 10px;
+        /*23px*/
+    }
+}

@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="/assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.min.js"></script>
         <script src="/assets/js/notify_counter.js" defer></script>
+        <script src="/assets/js/switch.js" defer></script>
 
 
     {{else}}
@@ -19,20 +20,12 @@
         <link rel="stylesheet" href="/assets/css/style.css">
         <!-- FAVICON  -->
         <link rel="icon" href="/assets/images/favicon/favicon.ico">
-
-        <!-- =========================
-           STYLESHEETS
-        ============================== -->
-
         <!-- BOOTSTRAP CSS -->
         <link rel="stylesheet" href="/assets/css/plugins/bootstrap.min.css">
-
         <!-- FONT ICONS -->
         <link rel="stylesheet" href="/assets/css/icons/icons.min.css">
-
         <!-- GOOGLE FONTS -->
         <link href="http://fonts.googleapis.com/css?family=Raleway:300,400,600,700%7COpen+Sans:300,400,600,700%7CHandlee" rel="stylesheet">
-
         <!-- PLUGINS STYLESHEET -->
         <link rel="stylesheet" href="/assets/css/plugins/plugins.min.css">
 
@@ -41,14 +34,11 @@
 
         <!-- RESPONSIVE FIXES -->
         <link rel="stylesheet" href="/assets/css/responsive.css">
-
         <!-- LOGO FONTS -->
         <link rel="stylesheet" href="/assets/css/style.css">
         <!--    <link rel="stylesheet" href="/assets/fonts/fonts.css" type="text/css" charset="utf-8" />-->
-
         <!-- Change here the Main Color of the Site: Choose your favorite predefined color from assets/css/colors.css -->
         <link rel="stylesheet" href="/assets/css/colors/yellow.css" title="yellow">
-
         <!--Particles-js source-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
 
@@ -119,7 +109,7 @@
 
                                       <div style="padding-top:2px;" class="setting-4 ">
                                           <a style="" href="/users/logout">
-                                              <i class="fa fa-sign-out"></i>
+                                              <i style="color:#3a2a28;" class="fa fa-sign-out"></i>
                                           </a>
                                       </div>
                                   </div>
@@ -130,13 +120,6 @@
 
 
                     {{else}}
-
-                     <!--   <li role="presentation">
-                            <a href="/users/login">Login</a>
-                        </li>
-                        <li role="presentation">
-                            <a href="/users/register">Register</a>
-                        </li>-->
                      <!-- ===================================================================
                             When user is NOT authenticated
                       ======================================================================== -->
@@ -237,6 +220,10 @@
                                                  {{/each}}
                                              {{/if}}
 
+                                             {{#if success_msg}}
+                                                 <div class="alert alert-success">{{success_msg}}</div>
+                                             {{/if}}
+
                                              <form method="post" action="/users/register">
                                                      <input type="text" class="form-control" placeholder="Name" name="name">
                                                      <input type="text" class="form-control" placeholder="Username" name="username">
@@ -267,14 +254,12 @@
                                      </div>
                                  </div>
                                  <!-- /End Modal-Footer -->
-
                              </div>
                              <!-- /End Modal Content -->
                          </div>
                          <!-- /End Modal Dialog -->
                      </div>
                      <!-- /End Modal -->
-
                     {{/if}}
 
                     {{{body}}} <!--Contents of inner or home pages-->

@@ -5,6 +5,7 @@ body {
     background: url(http://subtlepatterns.com/patterns/eight_horns.png);
     overflow-x: hidden;
     /* bottom scrollbar       background: repeat 0 0...   */
+
 }
 
 @font-face {
@@ -89,10 +90,18 @@ DROP DOWN notification menu
     float: left;
     font-size: 25px;
 }
+
+.settings > .setting-1 p , .btn-group-vertical p, .title{
+    font-weight: bold;
+    font-family: 'Raleway', 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+
 /*  main content */
 
 .main {
     padding-top: 85px;
+
 }
 /* <- left bar menu - */
 
@@ -102,6 +111,7 @@ DROP DOWN notification menu
 }
 
 .btn-nav {
+
     color: #3a2a28;
     outline: 0 !important;
 }
@@ -119,6 +129,7 @@ DROP DOWN notification menu
 }
 
 .sidebar-1 {
+
     left: 10px;
     position: fixed;
     width: 8%;
@@ -128,7 +139,7 @@ DROP DOWN notification menu
 
 .header,
 .btn-nav,
-.inner-content,
+.tab-content,
 .inner-sidebar-2 {
     background-color: rgba(252, 252, 252, 1);
 }
@@ -141,7 +152,7 @@ DROP DOWN notification menu
     padding-right: 15px;
 }
 
-.inner-content {
+.tab-content {
     border-bottom: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.10);

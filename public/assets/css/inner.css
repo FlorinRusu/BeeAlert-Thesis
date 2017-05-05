@@ -1,10 +1,14 @@
 html,
 body {
     height: 100%;
-    overflow-x: hidden ;
+    overflow-x:hidden;
     padding: 0;
     background: url(http://subtlepatterns.com/patterns/diagonal_striped_brick.png);
     /* bottom scrollbar   background: repeat 0 0...   */
+}
+
+body  {
+    overflow-y:scroll;
 }
 
 @font-face {
@@ -99,8 +103,8 @@ DROP DOWN notification menu
 
 /*                                                                     main content */
 .main > .row{
-    overflow-y:scroll ;
-    overflow-x:hidden;
+    overflow-y: scroll;
+
 }
 
 .main {
@@ -151,9 +155,9 @@ DROP DOWN notification menu
 .content {
     position: relative;
     float: left;
-    margin-left: 9.5%;
-    width: 65%;
-    padding-right: 15px;
+    margin-left: 9.7%;
+    width: 66%;
+    padding-right: 19px;
 }
 
 .tab-content {
@@ -319,7 +323,7 @@ DROP DOWN notification menu
     Resizing window
 -   -   -   -   -   -   -       */
 
-@media (min-width: 1381px) {
+@media (min-width: 1380px) {
     /*Styles for browsers larger than 1380*/
     .content {
         margin-left: 135px;

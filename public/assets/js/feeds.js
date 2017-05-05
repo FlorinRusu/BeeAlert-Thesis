@@ -2,7 +2,6 @@
  * Created by Florin on 5/4/2017.
  */
 
-/* Parse RSS feeds */
 $(document).ready(function() {
     //feed to parse
 

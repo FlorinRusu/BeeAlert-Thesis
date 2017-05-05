@@ -1,6 +1,8 @@
 /**
  * Created by Florin on 5/1/2017.
  */
+
+/*Count and show mini-list of notifications*/
 $(function() {
     $lungime = $(".dropdown-menu li").length;
     $(".ring-badge").append($lungime);
@@ -16,6 +18,7 @@ $(function() {
         $(".dropdown-menu").fadeToggle(300);
         return false;
     });
+
 });
 
 //When we simply click on the page, menu dissapears
@@ -27,3 +30,6 @@ $(document).click(function() {
 $(".dropdown-menu").click(function() {
     return false;
 });
+
+
+

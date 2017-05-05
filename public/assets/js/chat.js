@@ -41,7 +41,7 @@
                   scrollTop: $messages.prop('scrollHeight')
               }, 500);
           };
-          $('.send_message').click(function(e) {
+          $('.send').click(function(e) {
               return sendMessage(getMessageText());
           });
           $('.message_input').keyup(function(e) {

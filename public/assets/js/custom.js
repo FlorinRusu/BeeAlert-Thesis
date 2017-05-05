@@ -194,11 +194,13 @@ $('.venobox').venobox();
 /* ===================================================================
     TWEETIE -  TWITTER FEED PLUGIN THAT WORKS WITH NEW Twitter 1.1 API
 ==================================================================== */
+
 $('.tweet').twittie({
     apiPath : 'assets/js/plugins/twitter/api/tweet.php',
     count: 2,
     template: '{{tweet}} - <span class="date">{{date}}</span>'
 });
+
 
 
 /* =================================
@@ -520,7 +522,7 @@ $('.start-line').waypoint(function(direction){
 /* =======================================================================
    SIGNUP-DIVIDER ANIMATED POLYGON BACKGROUND
 ========================================================================== */
-    var container = document.getElementById('canvas-bg');
+ /*   var container = document.getElementById('canvas-bg');
     var renderer = new FSS.CanvasRenderer();
     var scene = new FSS.Scene();
     var light = new FSS.Light('323A45', '323A45');
@@ -550,7 +552,7 @@ $('.start-line').waypoint(function(direction){
     initialise();
     resize();
     animate();
-
+*/
 /* ===========================================================
    BOOTSTRAP FIX FOR IE10 in Windows 8 and Windows Phone 8  
 ============================================================== */

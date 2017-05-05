@@ -1,11 +1,10 @@
 html,
 body {
     height: 100%;
+    overflow-x: hidden ;
     padding: 0;
-    background: url(http://subtlepatterns.com/patterns/eight_horns.png);
-    overflow-x: hidden;
-    /* bottom scrollbar       background: repeat 0 0...   */
-
+    background: url(http://subtlepatterns.com/patterns/diagonal_striped_brick.png);
+    /* bottom scrollbar   background: repeat 0 0...   */
 }
 
 @font-face {
@@ -28,13 +27,14 @@ body {
     border-color: #fec20e;
 }
 
+
 #search-btn {
     background-color: #fec20e;
     outline: none;
 }
 
 #custom-search-input {
-    margin: 20px;
+    margin:20px;
     margin-left: 120px;
 }
 /*
@@ -97,7 +97,11 @@ DROP DOWN notification menu
 }
 
 
-/*  main content */
+/*                                                                     main content */
+.main > .row{
+    overflow-y:scroll ;
+    overflow-x:hidden;
+}
 
 .main {
     padding-top: 85px;
@@ -169,17 +173,19 @@ DROP DOWN notification menu
     position: fixed;
     width: 25%;
     float: left;
+
 }
 
 .inner-sidebar-2 {
     border-radius: 5px;
     min-height: 500px;
 }
+
 /* -    -   -   -   -    -    -   -    -
              Chat design
 -    -    -   -   -   -   -   -   -   - */
-
 .chat_window {
+    box-shadow: 2px 22px 2px rgba(0,0,0,0.25);
     position: absolute;
     width: 100%;
     max-width: 800px;
@@ -189,6 +195,7 @@ DROP DOWN notification menu
     transform: translateX(-50%) translateY(-50%);
     /*    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);*/
     background-color: #f8f8f8;
+    border-radius: 5px;
 }
 
 .top_menu {
@@ -268,9 +275,7 @@ DROP DOWN notification menu
     padding: 15px;
     border-radius: 6px;
     max-width: 250px;
-    /* BORDER RADIUS*/
-    /* width: 150px;
-    min-width: 100px;*/
+
     position: relative;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
 }
@@ -283,17 +288,31 @@ DROP DOWN notification menu
 /* Bottom block */
 
 .bottom_wrapper {
-    box-shadow: 50px 5px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.15);
     position: relative;
     width: 100%;
     background-color: rgba(252, 252, 252, 1);
     padding: 20px 20px;
     bottom: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
-.message_input {
+.bottom_wrapper .message_input   {
     /*   width: 100%;*/
-    border-radius: 0px;
+    width: 80%;
+    float:left;
+}
+
+ .send  {
+    float:left;
+    width:20%;
+    position:relative;
+    margin-left:-3px;
+    background-color: #fec20e !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+
 }
 /*.message_input:focus {}*/
 /*   -   -   -   -   -   -   -

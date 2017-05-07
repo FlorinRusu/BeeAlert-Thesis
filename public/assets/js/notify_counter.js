@@ -4,6 +4,7 @@
 
 /*Count and show mini-list of notifications*/
 $(function() {
+
     $lungime = $(".dropdown-menu li").length;
     $(".ring-badge").append($lungime);
 
@@ -21,7 +22,7 @@ $(function() {
 
 });
 
-//When we simply click on the page, menu dissapears
+//When we simply click on the page, menu disappears
 $(document).click(function() {
     $(".dropdown-menu").hide();
 });

@@ -8,6 +8,7 @@ body {
 }
 
 body  {
+    height:100%;
     overflow-y:scroll;
 }
 
@@ -165,6 +166,17 @@ DROP DOWN notification menu
     border-radius: 5px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.10);
 }
+
+ #tab5show{
+    min-height:550px;
+}
+
+#map {
+     float: left;
+     min-width: 70%;
+     height:500px;
+     border: 1px solid black;
+ }
 
 .apa-canal {
     width: 120px;

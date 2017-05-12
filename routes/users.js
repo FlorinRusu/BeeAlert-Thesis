@@ -16,11 +16,7 @@ router.get('/register', function(req, res) {
 /*    Try RSS FEEDS */
 router.get('/feeds', function(req, res, data) {
     parser.parseURL('http://www.emsc-csem.org/service/rss/rss.php?filter=yes&min_mag=3.5&region=ROMANIA&min_intens=0&max_intens=8', function(err, parsed) {
-        // parsed.feed.entries.forEach(function(entry) {
-        //     data = data + (entry.title +"<br>"+ entry.pubDate);
-        // });
-        res.setHeader('Content-Type', 'application/json');
-        res.send(JSON.stringify(parsed.feed.entries, null, 3));
+        res.json(parsed.feed.entries);
     });
 });
 

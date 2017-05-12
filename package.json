@@ -25,7 +25,9 @@
     "passport": "*",
     "passport-http": "*",
     "passport-local": "*",
-    "serve-favicon": "~2.3.0"
+    "rss-parser": "^2.7.0",
+    "serve-favicon": "~2.3.0",
+    "xml": "^1.0.1"
   },
   "description": "thesis",
   "main": "app.js",

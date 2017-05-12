@@ -2,6 +2,8 @@ var express = require('express');
 var router = express.Router();
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
+var parser = require('rss-parser');
+var xml = require('xml');
 
 var User = require('../models/user');
 
@@ -10,9 +12,20 @@ router.get('/register', function(req, res) {
   res.render('register');
 });
 
-//Login view
+
+/*    Try RSS FEEDS */
+router.get('/feeds', function(req, res, data) {
+    parser.parseURL('http://www.emsc-csem.org/service/rss/rss.php?filter=yes&min_mag=3.5&region=ROMANIA&min_intens=0&max_intens=8', function(err, parsed) {
+        parsed.feed.entries.forEach(function(entry) {
+            data = data + (entry.title +"<br>"+ entry.pubDate);
+        });
+         res.send(data);
+    });
+});
+
+ //Login view
 router.get('/login',function(req,res){
-  res.render('login');
+        res.render('login');
 });
 
 

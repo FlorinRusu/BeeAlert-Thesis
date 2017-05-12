@@ -12,6 +12,7 @@ var mongo = require('mongodb');
 var mongoose = require('mongoose');
 var http = require('http');
 
+
 mongoose.connect('mongodb://localhost/BeeAlert-Thesis');
 var db = mongoose.connection;
 
@@ -20,9 +21,9 @@ var db = mongoose.connection;
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
+
 // Init App
 var app = express();
-
 
 // View Engine
 app.set('views', path.join(__dirname, 'views'));
@@ -68,8 +69,8 @@ app.use(expressValidator({
 }));
 
 
-/*
 app.all('*', function(req, res, next) {
+    res.header('Content-Type', 'text/html');
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS');
     res.header('Access-Control-Allow-Headers', 'accept, content-type, x-parse-application-id, x-parse-rest-api-key, x-parse-session-token');
@@ -81,7 +82,6 @@ app.all('*', function(req, res, next) {
         next();
     }
 });
-*/
 
 // Connect Flash
 app.use(flash());
@@ -99,7 +99,6 @@ app.use('/', routes);
 app.use('/users', users);
 
 
-// Set Port
 app.set('port', (process.env.PORT || 3000));
 
 app.listen(app.get('port'), function(){

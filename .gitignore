@@ -1,0 +1,7 @@
+/node_modules
+.idea/deployment.xml
+.idea/inspectionProfiles/
+.idea/php.xml
+.idea/workspace.xml
+BeeAlert-Thesis.iml
+/bin

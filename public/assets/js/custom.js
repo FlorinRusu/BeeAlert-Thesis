@@ -290,30 +290,30 @@ $("#subscribe").submit(function(e) {
 /* ============================
    LOGIN-MODAL VALIDATION. 
 =============================== */
-$("#login-modal").submit(function(e) {
-    e.preventDefault();
-    var data = {
-        password: $("#lm-password").val(),
-        email: $("#lm-email").val()
-    };
-
-    if ( isValidEmail(data['email']) && (data['password'].length > 1) ) {
-        $.ajax({
-            type: "POST",
-            url: "assets/php/subscribe.php",
-            data: data,
-            success: function() {
-                $('.lm-success').fadeIn(1000);
-                $('.lm-failed').fadeOut(500);
-            }
-        });
-    } else {
-        $('.lm-failed').fadeIn(1000);
-        $('.lm-success').fadeOut(500);
-    }
-
-    return false;
-});
+// $("#login-modal").submit(function(e) {
+//     e.preventDefault();
+//     var data = {
+//         password: $("#lm-password").val(),
+//         email: $("#lm-email").val()
+//     };
+//
+//     if ( isValidEmail(data['email']) && (data['password'].length > 1) ) {
+//         $.ajax({
+//             type: "POST",
+//             url: "assets/php/subscribe.php",
+//             data: data,
+//             success: function() {
+//                 $('.lm-success').fadeIn(1000);
+//                 $('.lm-failed').fadeOut(500);
+//             }
+//         });
+//     } else {
+//         $('.lm-failed').fadeIn(1000);
+//         $('.lm-success').fadeOut(500);
+//     }
+//
+//     return false;
+// });
 
 
 /* ===========================================

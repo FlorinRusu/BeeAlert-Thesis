@@ -215,7 +215,9 @@ DROP DOWN notification menu
 }
 
 .top_menu {
-    border-radius: 5px;
+
+    border-top-right-radius:5px;
+    border-top-left-radius:5px ;
     background-color: rgba(252, 252, 252, 1);
     width: 100%;
     padding: 20px 0 15px;
@@ -351,5 +353,9 @@ DROP DOWN notification menu
     .sidebar-2 {
         right: 10px;
         /*23px*/
+    }
+    .content {
+        margin-left: 133px;
+        width: 69%;
     }
 }

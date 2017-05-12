@@ -2,11 +2,12 @@
  * Created by Florin on 5/4/2017.
  */
 
-$(document).ready(function() {
+/*
     //feed to parse
+$(document).ready(function() {
 
     var feed = "http://feeds.feedburner.com/raymondcamdensblog?format=xml";
-  /*  http://www.emsc-csem.org/service/rss/rss.php?filter=yes&min_mag=3.5&region=ROMANIA&min_intens=0&max_intens=8*/
+  //http://www.emsc-csem.org/service/rss/rss.php?filter=yes&min_mag=3.5&region=ROMANIA&min_intens=0&max_intens=8/
     $.ajax(feed, {
         accepts:{
             xml:"application/rss+xml"
@@ -30,3 +31,4 @@ $(document).ready(function() {
     });
 
 });
+*/

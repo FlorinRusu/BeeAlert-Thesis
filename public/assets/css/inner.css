@@ -174,7 +174,8 @@ DROP DOWN notification menu
 #map {
      float: left;
      min-width: 70%;
-     height:500px;
+     margin-top: 38px;
+     height:470px;
      border: 1px solid black;
  }
 
@@ -332,7 +333,26 @@ DROP DOWN notification menu
     border-top-left-radius: 0 !important;
 
 }
-/*.message_input:focus {}*/
+   /* Seisme block*/
+ #list {
+     float: left;
+     position: relative;
+     left: 20px;
+     min-width: 233px;
+     min-height: 500px;
+     /*border: 1px solid black;*/
+ }
+
+.tab-content .eq-list .equakes{
+     background-color:#fcfcfc;
+     height:45px;
+     border-radius:0px;
+     font-size: 13.5px;
+     font-family:'Raleway' , Helvetica, Arial, sans-serif;
+ }
+.eq-list .equakes:hover{
+    background-color: whitesmoke;
+}
 /*   -   -   -   -   -   -   -
     Resizing window
 -   -   -   -   -   -   -       */

@@ -38,24 +38,3 @@ function getCircle(magnitude) {
 function eqfeed_callback(results) {
     map.data.addGeoJson(results);
 }
-
-$(function () {
-    $.ajax('/users/feeds', {
-        dataType:"json",
-        success:function(data) {
-            //Credit: http://stackoverflow.com/questions/10943544/how-to-parse-an-rss-feed-using-javascript
-            console.log(data);
-            var $result = '';
-            var $list = $('#list');
-            for(var i = 0; i < data.length; i++) {
-                $result += '<li>'+data[i].title+'</li>';
-            }
-            $list.html('<ul>'+$result+'</ul>')
-        },
-
-        error: function( data){
-            console.log(data);
-        }
-    });
-
-});

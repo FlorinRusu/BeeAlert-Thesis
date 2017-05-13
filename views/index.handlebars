@@ -154,33 +154,16 @@
             </article>
         </div>
 
-
+                   <!-- SEISME CONTENT-->
             <div id="tab5show" class="tab-content col-lg-12 text-center">
-                <br><!-- API KEY = AIzaSyAwKfBjk-dZfD2yr3rtNgGYzpMd_AEygrc-->
+                <!-- API KEY = AIzaSyAwKfBjk-dZfD2yr3rtNgGYzpMd_AEygrc-->
                   <div id="map"> </div>
-                  <div  id="list" style=" float:left; position:relative; left:20px;   min-width: 233px; min-height: 500px;  border: 1px solid black;" >
-
-                      <div class="eq-settings"></div>
-                      <div class="eq-list">
-
-                          <script>
-                              $(function(){
-                                  $.get('http://127.0.0.1:3000/users/feeds', {}, function(data){
-                                      var val =/[3-9].[0-9]/;
-                                      var val1 =/\bROMANIA\b/g;
-                                      var match_data = data.match(val)+data.match(val1);
-                                      console.log(match_data);
-                                      $( ".eq-list" ).append(match_data);
-
-//                                      $( ".eq-list" ).append(data);
-                                  });
-                              });
-                          </script>
-                          <div>Romania 4.0</div>
-                          <div>Romania 3.6</div>
+                  <div id="list">
+                      <div class="title" style=" font-size:15px; padding-top: 35px;">
+                          <p  >Seisme recente:</p>
                       </div>
+                      <div class="eq-list"></div>
                   </div>
-
             </div>
 
         <div class="sidebar-2 ">
@@ -208,10 +191,10 @@
                         <div class="text_wrapper">
                             <div class="text"></div>
                             <time datetime="2009-11-13T20:00">acum•1 min</time>
-
                         </div>
                     </li>
                 </div>
+
             </div>
         </div>
     </div>

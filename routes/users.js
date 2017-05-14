@@ -4,7 +4,8 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var parser = require('rss-parser');
 var xml = require('xml');
-
+var cheerio = require('cheerio');
+var request = require('request');
 var User = require('../models/user');
 
 /* Register */
@@ -19,6 +20,18 @@ router.get('/feeds', function(req, res, data) {
         res.json(parsed.feed.entries);
     });
 });
+
+/*/!*     RSS FEEDS *!/
+router.get('/parser', function(req, res, data) {
+    request('http://www.accuweather.com/ro/md/chiinu/242405/daily-weather-forecast/242405?day=6', function (error, response, html) {
+        if (!error && response.statusCode == 200) {
+           console.log( cheerio.load(html));
+
+        }
+    });
+
+});*/
+
 
 
 router.get('/login',function(req,res){

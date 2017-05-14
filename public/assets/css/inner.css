@@ -161,6 +161,9 @@ DROP DOWN notification menu
     padding-right: 19px;
 }
 
+.content hr {
+    border-width: 2px ;
+}
 .tab-content {
     border-bottom: 1px solid #ddd;
     border-radius: 5px;

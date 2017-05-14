@@ -1,0 +1,5356 @@
+@charset "UTF-8";
+
+.panel-list .tab-weather {
+    margin-top: 20px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height:500px;
+    vertical-align: baseline
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+    display: block
+}
+
+/*body {
+    line-height: 1
+}*/
+
+ol,
+ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: "";
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+.clearfix:after,
+.full-width-button:after,
+.inner-city-header #nav-current-location:after,
+.news-feed #fdu-more-link a:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+#aadBot300,
+#aadTop300,
+#crowdynews-main,
+#detail-day-night .inner,
+#detail-hourly .premium-info,
+#detail-now,
+#directions-panel,
+#ecBody,
+#feature-history,
+#feature-moon .inner,
+#feature-radar .inner,
+#feature-sun .inner,
+#feature-video .inner,
+#image-overlay,
+#menu-settings,
+#monthly-chart,
+#storm-tabs,
+.alert-sidebar-radar,
+.alert-sidebar-video,
+.base-panel-styles,
+.browse-bread-crumb,
+.calendar-block .box,
+.calendar-controls,
+.carousel-panel,
+.climate-statement,
+.column-2 .history,
+.column-2 .hourly-table,
+.column-2 .lifestyle-map,
+.column-2 .rough-weather,
+.column-2 .weather-why,
+.column-2-r #aadTRR160,
+.comments,
+.condition-table,
+.control-bar,
+.downloads-list,
+.fc-status.lfs,
+.fc-status.mc,
+.feature-module,
+.feature-stats,
+.feed-controls,
+.forecast-double,
+.forecast-maps .forecast-single,
+.forecast-maps .map-small-con .single-small,
+.hourly-table,
+.hurricane-article,
+.hurricane-carousel #hurr-map-feature,
+.hurricane-home-map,
+.hurricane-home-topstory,
+.interactive-radar-module,
+.lifestyle-sidebar-module,
+.lunar-module,
+.map-info-module,
+.map-info-set,
+.map-local-radar,
+.map-small-row .map-small-lt .single-small,
+.map-small-row .map-small-rt .single-small,
+.mincast-table-panel,
+.mincast-timeline-panel,
+.news-feed,
+.outlook-center-panel,
+.panel-list,
+.panel-top-story,
+.panel-warning,
+.personalities,
+.pollen-panel,
+.press-utility .article-story,
+.radar-list-set,
+.radar-map,
+.radar-panel-set,
+.radar-sidebar-module,
+.results-list,
+.results-table,
+.satellite-map-module,
+.sidebar-bio-module,
+.sidebar-blog-about,
+.sidebar-downloads-fb,
+.sidebar-news-feed,
+.sidebar-severe-tracker,
+.sidebar-telmet-promo,
+.sidebar-tropical-tracker,
+.sidebar-twitter-more,
+.social-sidebar-crowdy,
+.social-sidebar-twitter,
+.special-indices-table,
+.sponsor-col2 .subtle,
+.sponsor-col2-head,
+.storm-table,
+.terms-privacy,
+.tooltip-interactive-map,
+.trip-planner-module,
+.tropical-basin-satellite,
+.utility-module,
+.video-search-module,
+.warnings-map,
+.weather-tab-open,
+div.brand-partner {
+    margin-top: 15px;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #bdbab9
+}
+
+#feature-history table,
+.feature-stats table,
+.table-styles {
+    margin-top: 15px;
+    width: 100%;
+    text-align: left;
+    font-size: 16px
+}
+
+#feature-history table thead tr,
+.feature-stats table thead tr,
+.table-styles thead tr {
+    border: none
+}
+
+#feature-history table thead th,
+.feature-stats table thead th,
+.table-styles thead th {
+    color: #999
+}
+
+#feature-history table tr,
+.feature-stats table tr,
+.table-styles tr {
+    height: 38px;
+    border-top: 1px solid #c8c8c8
+}
+
+#carousel-pages,
+.bottom-bar-styles,
+.full-width-button,
+.news-feed #fdu-more-link {
+    background: #f7f6f5;
+    box-shadow: inset 0 7px 9px -11px
+}
+
+.feature-module #popular-locations .temp .large-temp,
+.large-temp {
+    font-size: 45px;
+    color: #1f384d;
+    font-family: roboto, sans-serif
+}
+
+.small-left-arrow {
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/arrow-left-solid-orange.svg) no-repeat;
+    background-size: cover;
+    background-position: 50%
+}
+
+#feature-moon .arrow,
+#feature-sun .arrow,
+.jump-tabs .hourly-forecast a:after,
+.small-right-arrow {
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/arrow-right-solid-orange.svg) no-repeat;
+    background-size: cover;
+    background-position: 50%
+}
+
+.calendar-controls .month .g .btr-increment span:after,
+.calendar-controls .month .g .btr-select span:after,
+.drop-arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0;
+    border-color: #1f384d transparent transparent
+}
+
+#menu-cities ul.menu-items li a span,
+.vcenter {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%)
+}
+
+.icon-inline {
+    display: inline-block
+}
+
+.icon {
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.icon[class*=-s] {
+    height: 30px;
+    width: 30px
+}
+
+.icon[class*=-m] {
+    height: 60px;
+    width: 60px
+}
+
+.icon[class*=-l] {
+    height: 75px;
+    width: 75px
+}
+
+.icon[class*=-xl] {
+    height: 130px;
+    width: 130px
+}
+
+[class*=i-1-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/01.svg)
+}
+
+[class*=i-2-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/02.svg)
+}
+
+[class*=i-3-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/03.svg)
+}
+
+[class*=i-4-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/04.svg)
+}
+
+[class*=i-5-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/05.svg)
+}
+
+[class*=i-6-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/06.svg)
+}
+
+[class*=i-7-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/07.svg)
+}
+
+[class*=i-8-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/08.svg)
+}
+
+[class*=i-9-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/09.svg)
+}
+
+[class*=i-10-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/10.svg)
+}
+
+[class*=i-11-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/11.svg)
+}
+
+[class*=i-12-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/12.svg)
+}
+
+[class*=i-13-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/13.svg)
+}
+
+[class*=i-14-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/14.svg)
+}
+
+[class*=i-15-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/15.svg)
+}
+
+[class*=i-16-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/16.svg)
+}
+
+[class*=i-17-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/17.svg)
+}
+
+[class*=i-18-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/18.svg)
+}
+
+[class*=i-19-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/19.svg)
+}
+
+[class*=i-20-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/20.svg)
+}
+
+[class*=i-21-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/21.svg)
+}
+
+[class*=i-22-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/22.svg)
+}
+
+[class*=i-23-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/23.svg)
+}
+
+[class*=i-24-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/24.svg)
+}
+
+[class*=i-25-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/25.svg)
+}
+
+[class*=i-26-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/26.svg)
+}
+
+[class*=i-27-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/27.svg)
+}
+
+[class*=i-28-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/28.svg)
+}
+
+[class*=i-29-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/29.svg)
+}
+
+[class*=i-30-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/30.svg)
+}
+
+[class*=i-31-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/31.svg)
+}
+
+[class*=i-32-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/32.svg)
+}
+
+[class*=i-33-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/33.svg)
+}
+
+[class*=i-34-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/34.svg)
+}
+
+[class*=i-35-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/35.svg)
+}
+
+[class*=i-36-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/36.svg)
+}
+
+[class*=i-37-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/37.svg)
+}
+
+[class*=i-38-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/38.svg)
+}
+
+[class*=i-39-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/39.svg)
+}
+
+[class*=i-40-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/40.svg)
+}
+
+[class*=i-41-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/41.svg)
+}
+
+[class*=i-42-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/42.svg)
+}
+
+[class*=i-43-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/43.svg)
+}
+
+[class*=i-44-] {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icons/44.svg)
+}
+
+.minute-list .rain {
+    height: 50px;
+    width: 50px;
+    background-position: 0 -6px!important
+}
+
+.minute-list .rain.light,
+.minute-list .rain.light-moderate {
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/icons/mc-rain.svg)
+}
+
+.minute-list .rain.heavy,
+.minute-list .rain.moderate {
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/icons/mc-heavyrain.svg)
+}
+
+.minute-list .ice {
+    background-position: 0 -6px!important;
+    height: 60px;
+    width: 60px;
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/icons/mc-ice.svg)
+}
+
+.minute-list .snow {
+    background-position: 0 -6px!important;
+    height: 60px;
+    width: 60px
+}
+
+.minute-list .snow.light,
+.minute-list .snow.light-moderate {
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/icons/mc-snow.svg)
+}
+
+.minute-list .snow.heavy,
+.minute-list .snow.moderate {
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/icons/mc-heavysnow.svg)
+}
+
+.minute-list .mix {
+    background-position: 0 -6px!important;
+    height: 60px;
+    width: 60px;
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/icons/mc-wintrymix.svg)
+}
+
+.wind-compass {
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/wind-compass-outline.svg);
+    background-size: 66px 66px
+}
+
+.wind-compass,
+.wind-point {
+    position: absolute;
+    width: 66px!important;
+    height: 66px!important
+}
+
+.wind-point {
+    z-index: 2;
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/wind-arrow.svg);
+    background-size: 33px 33px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%
+}
+
+.wind-point.N {
+    -webkit-transform: rotate(315deg);
+    transform: rotate(315deg)
+}
+
+.wind-point.NNE {
+    -webkit-transform: rotate(337deg);
+    transform: rotate(337deg)
+}
+
+.wind-point.NE {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+}
+
+.wind-point.ENE {
+    -webkit-transform: rotate(22deg);
+    transform: rotate(22deg)
+}
+
+.wind-point.E {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.wind-point.ESE {
+    -webkit-transform: rotate(67deg);
+    transform: rotate(67deg)
+}
+
+.wind-point.SE {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg)
+}
+
+.wind-point.SSE {
+    -webkit-transform: rotate(112deg);
+    transform: rotate(112deg)
+}
+
+.wind-point.S {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg)
+}
+
+.wind-point.SSW {
+    -webkit-transform: rotate(157deg);
+    transform: rotate(157deg)
+}
+
+.wind-point.SW {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.wind-point.WSW {
+    -webkit-transform: rotate(202deg);
+    transform: rotate(202deg)
+}
+
+.wind-point.W {
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg)
+}
+
+.wind-point.WNW {
+    -webkit-transform: rotate(247deg);
+    transform: rotate(247deg)
+}
+
+.wind-point.NW {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg)
+}
+
+.wind-point.NNW {
+    -webkit-transform: rotate(292deg);
+    transform: rotate(292deg)
+}
+
+.wind-point.CLM,
+.wind-point.Unknown {
+    display: none
+}
+
+.wind-box-lg {
+    position: relative;
+    background: none
+}
+
+.wind-box-lg div {
+    height: 50px;
+    width: 50px
+}
+
+.wind-box-sm {
+    position: relative;
+    background: none
+}
+
+.wind-box-sm div {
+    height: 45px;
+    width: 45px
+}
+
+html {
+    box-sizing: border-box
+}
+
+/*
+*,
+:after,
+:before {
+    box-sizing: inherit
+}
+*/
+
+body,
+html {
+    width: 100%
+}
+
+#wrap {
+    margin: 0 auto
+}
+
+#wrap-content {
+    width: 990px;
+    margin: 0 auto
+}
+
+#content {
+    margin: 0 -7px
+}
+
+#content:after,
+#content:before {
+    content: "";
+    display: table
+}
+
+#content:after {
+    clear: both
+}
+
+.column-1 {
+    width: 620px;
+    margin-bottom: 15px
+}
+
+.column-1,
+.column-2 {
+    float: left;
+    padding: 0 7px;
+    margin-top: -10px;
+    position: relative
+}
+
+.column-2 {
+    width: 384px;
+    margin-bottom: 30px
+}
+
+.column-1-e {
+    width: 800px
+}
+
+.column-1-w {
+    width: 100%
+}
+
+.column-2-r {
+    width: 204px!important
+}
+
+.column-2-r #aadTop300 {
+    height: 600px
+}
+
+.full-width-col {
+    position: relative;
+    padding: 0 7px;
+    margin-top: -10px
+}
+
+#radar-body {
+    padding-left: 0!important
+}
+
+.is-hidden {
+    display: none!important
+}
+
+#image-panel {
+    position: fixed;
+    left: -99999px
+}
+
+#panel-main {
+    margin-top: 15px
+}
+
+
+#detail-hourly .premium-info h2,
+#directions-panel h3,
+#monthly-chart h3,
+#severe-body h2,
+#severemaps-body h2,
+#storm-tabs h3,
+.about-utility .tab-panel h4,
+.article-story h1,
+.article-story h1 a,
+.article-story h2,
+.article-story h2 a,
+.article-wrap>span,
+.climate-statement h3,
+.condition-table h3,
+.downloads-list h2,
+.feature-module #popular-locations h4,
+.feature-module .radar-info h3,
+.forecast-double h2,
+.forecast-maps .forecast-lead.forecast-single h2,
+.forecast-maps .forecast-lead.forecast-single h3,
+.forecast-maps .forecast-single.lifestyle-map.forecast-lead h2,
+.forecast-maps .forecast-single h2,
+.hurricane-home-map h2,
+.hurricane-home-topstory h2,
+.interactive-radar-module h2,
+.lunar-module h3,
+.map-info-module h3,
+.map-info-set h2,
+.mincast-table-panel h3,
+.mincast-timeline-panel .mc-summary,
+.module-header,
+.news-feed #liveFeedTitle,
+.news-feed h2,
+.news-feed h3,
+.news-video-feed h2,
+.no-results h6,
+.personalities h2,
+.personality-bio h3,
+.press-utility .article-story h2,
+.radar-list-set h3,
+.radar-map h2,
+.radar-map h3,
+.radar-sidebar-module h4,
+.results-list a,
+.results-table h3,
+.satellite-map-module h2,
+.sidebar-news-feed h3,
+.sidebar-news-feed h4,
+.sidebar-severe-tracker h3,
+.special-indices-table h3,
+.sponsor-col2-head h3 a,
+.sub-header-wrap .recent-locations-dropdown h2,
+.terms-privacy h3,
+.tide-tables .feature-stats h2,
+.tooltip-interactive-map h3,
+.trip-planner-module h2,
+.tropical-basin-satellite h2,
+.utility-module h3,
+.video-search-module h3,
+h3 a {
+    color: #1f384d;
+    font-weight: 700;
+    font-size: 22px;
+    padding-bottom: 25px
+}
+
+#crowdynews-main .bbWidgetTitle,
+#help-accuracy h4,
+#help-ads h4,
+#help-radar h4,
+#image-overlay h3,
+.alert-sidebar-radar h4,
+.article-header,
+.column-2 .history strong,
+.column-2 .lifestyle-map h4,
+.comments h3,
+.forecast-double h4,
+.forecast-maps .forecast-single.lifestyle-map.forecast-lead h3,
+.forecast-maps .forecast-single.lifestyle-map h2,
+.forecast-maps .map-small-con h4,
+.hurricane-article h3,
+.lifestyle-sidebar-module.flight-module h3,
+.lifestyle-sidebar-module h4,
+.map-small-row .map-small-lt .single-small h4,
+.map-small-row .map-small-rt .single-small h4,
+.news-video-feed h4 a,
+.sidebar-bio-module h3,
+.sidebar-blog-about h4,
+.sidebar-news-feed .articles li h6 a,
+.sidebar-tropical-tracker h3,
+.sidebar-twitter-more h4,
+.social-sidebar-crowdy h3,
+.social-sidebar-twitter h4,
+.sponsor-col2 h4 a,
+.tropical-basin-satellite .graphic_con h4,
+.video-search-module h6,
+.warning-article h4,
+.weather-tab-open h3,
+h4 a {
+    color: #1f384d;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    font-family: helvetica, arial, sans-serif;
+    padding-bottom: 25px
+}
+
+#ecBody .weekend-events .dates,
+#header-logo-search #social-connect .label,
+#wrap-header-nav #header-logo .brand-title,
+.article-story h5,
+.article-story h6,
+.feature-module #popular-locations .temp .small-temp,
+.info-header,
+.mincast-table-panel .time,
+.mincast-timeline-panel .update,
+.weather-tab-open h4,
+h5 {
+    color: #999;
+    font-weight: 700;
+    font-size: 12px;
+    padding-top: 6px;
+    display: block
+}
+
+/*.feature-module #popular-locations .cond,
+.paragraph-styles,
+.sponsor-col2-head blockquote b,
+p {
+    color: #1f384d;
+    font-size: 16px;
+    font-family: helvetica, arial, sans-serif;
+    line-height: 18px;
+    padding: 10px 0
+}*/
+
+.cl,
+.hv {
+    cursor: pointer
+}
+
+#menu-cities ul.menu-items li a span,
+.vcenter {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%)
+}
+
+.full-width-button {
+    clear: both
+}
+
+.full-width-button a {
+    color: #f05514;
+    display: block;
+    position: relative
+}
+
+.full-width-button .cta {
+    padding: 13px 25px 13px 15px
+}
+
+.full-width-button .arrow {
+    text-indent: -99999px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin-right: 10px;
+    width: 25px;
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/arrow-right-solid-orange.svg) no-repeat;
+    background-size: 25px auto;
+    background-position: center 50%
+}
+
+.full-width-button:hover {
+    background: rgba(20, 29, 38, .1)
+}
+
+.module-tabs li {
+    display: inline-block;
+    margin-bottom: 5px
+}
+
+.module-tabs a {
+    display: block;
+    background: #f6f6f3;
+    padding: 8px;
+    color: #1f384d;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid #c8c8c8
+}
+
+.module-tabs a:active,
+.module-tabs a:focus,
+.module-tabs a:hover {
+    text-decoration: none;
+    background: #eaeaea
+}
+
+.module-tabs .current a,
+.module-tabs a.current {
+    background: #f05514;
+    color: #fff;
+    border: 1px solid #f05514
+}
+
+.column-2 .module-tabs a {
+    text-transform: none
+}
+
+.block-tabs {
+    width: 100%;
+    height: 35px;
+    background: #3a4147;
+    display: table;
+    color: #1f384d;
+    margin-top: 15px;
+    border-radius: 2px
+}
+
+.block-tabs li {
+    display: inline-block;
+    padding: 0 14px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 2px solid #3a4147;
+    border-left: 1px solid #4c5158
+}
+
+.block-tabs li:last-of-type {
+    border-right: 1px solid #4c5158
+}
+
+.block-tabs li:active .block-tabs li:focus,
+.block-tabs li:hover {
+    background-color: hsla(0, 0%, 100%, .1);
+    border-bottom: 2px solid #4e545a
+}
+
+.block-tabs li:active .block-tabs li:focus a,
+.block-tabs li:hover a {
+    cursor: pointer;
+    text-decoration: none
+}
+
+.block-tabs a {
+    color: #999;
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 32px
+}
+
+.block-tabs li.current {
+    border-bottom: 3px solid #f05514
+}
+
+.block-tabs li.current a {
+    color: #fff
+}
+
+.block-tabs li.empty {
+    width: 480px
+}
+
+.block-tabs li.empty:hover {
+    border: 0
+}
+
+.sub-block-tabs {
+    width: 100%;
+    background: #f7f6f5;
+    border: 1px solid #bdbab9;
+    border-top: 0;
+    overflow: hidden;
+    border-radius: 0 0 2px 2px
+}
+
+.sub-block-tabs ul {
+    font-size: 0
+}
+
+.sub-block-tabs li {
+    display: inline-block;
+    font-size: 0;
+    border-right: 1px solid #c8c8c8;
+    border-bottom: 2px solid #f7f6f5
+}
+
+.sub-block-tabs li:hover {
+    border-bottom: 3px solid #e1e0e0
+}
+
+.sub-block-tabs a {
+    font-size: 0;
+    font-size: 13px;
+    color: #999;
+    display: block;
+    line-height: 25px;
+    padding: 0 10px
+}
+
+.sub-block-tabs a:active .sub-block-tabs a:focus,
+.sub-block-tabs a:hover {
+    text-decoration: none;
+    background: rgba(20, 29, 38, .1)
+}
+
+.sub-block-tabs li.current {
+    border-bottom: 3px solid #f05514
+}
+
+.sub-block-tabs li.current a {
+    color: #1f384d!important
+}
+
+.active-hover-tab a,
+.active-hover-tab span {
+    color: #fff!important
+}
+
+.active-hover-tab span.arrow {
+    border-color: #fff transparent transparent!important
+}
+
+.tooltip {
+    height: 30px;
+    width: 30px;
+    display: block;
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/tooltip-icon.svg);
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    top: 15px
+}
+
+.tooltip .tooltip-content {
+    background: #f7f6f5;
+    border: 1px solid #999;
+    display: none;
+    font-size: 14px;
+    left: 50%;
+    padding: 10px;
+    position: absolute;
+    top: calc(100% + 15px);
+    transform: translateX(-90%);
+    -webkit-transform: translateX(-90%);
+    width: 190px;
+    z-index: 13
+}
+
+.tooltip .tooltip-content.tooltip-content-active {
+    display: block
+}
+
+.tooltip .tooltip-content:after {
+    background: #f7f6f5;
+    border-left: 1px solid #999;
+    border-top: 1px solid #999;
+    content: "";
+    display: block;
+    height: 14px;
+    left: 91.5%;
+    position: absolute;
+    transform: translateX(-7px) rotate(45deg);
+    -webkit-transform: translateX(-7px) rotate(45deg);
+    top: -7px;
+    width: 14px
+}
+
+.dropdown-selector {
+    cursor: pointer;
+    display: inline-block;
+    background: #f7f6f5;
+    position: relative;
+    border: 1px solid #e4e4e4;
+    border-radius: 4px;
+    line-height: 30px;
+    color: #1f384d;
+    padding-left: 12px;
+    padding-right: 18px;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.dropdown-selector:hover {
+    background: #ece9e7;
+    cursor: pointer
+}
+
+.dropdown-selector:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border-style: solid;
+    border-width: 5px 5px 0;
+    border-color: #1f384d transparent transparent
+}
+
+.full-width-button.next-prev .prev a {
+    display: inline-block
+}
+
+.full-width-button.next-prev .prev a:before {
+    margin-left: 15px;
+    margin-right: 5px;
+    vertical-align: middle;
+    content: "";
+    width: 25px;
+    display: inline-block;
+    height: 25px;
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/arrow-left-solid-orange.svg) no-repeat;
+    background-size: cover
+}
+
+.full-width-button.next-prev .next a {
+    display: inline-block
+}
+
+.full-width-button.next-prev .next a:after {
+    margin-left: 5px;
+    margin-right: 15px;
+    vertical-align: middle;
+    display: inline-block;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/arrow-right-solid-orange.svg) no-repeat;
+    background-size: cover
+}
+
+.panel-control.prev-next {
+    background: #f7f6f5;
+    border: 1px solid #bdbab9;
+    overflow: auto;
+    border-radius: 2px;
+    width: 100%;
+    margin: 15px auto 0
+}
+
+.panel-control.prev-next .first {
+    display: inline-block;
+    float: left;
+    position: relative
+}
+
+.panel-control.prev-next .first a {
+    font-size: 13px;
+    margin-left: 30px
+}
+
+.panel-control.prev-next .first a:before {
+    content: "";
+    height: 15px;
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/arrow-left-orange.svg);
+    background-size: cover;
+    background-position: 50%;
+    width: 15px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 11px;
+    top: 6px
+}
+
+.panel-control.prev-next .first a:hover:before {
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/arrow-left-solid-orange.svg);
+    background-size: cover
+}
+
+.panel-control.prev-next .last {
+    float: right;
+    display: inline-block;
+    position: relative
+}
+
+.panel-control.prev-next .last a {
+    font-size: 13px;
+    margin-right: 30px
+}
+
+.panel-control.prev-next .last a:after {
+    content: "";
+    height: 15px;
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/arrow-right-orange.svg);
+    background-size: cover;
+    background-position: 50%;
+    width: 15px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 43px;
+    top: 6px
+}
+
+.panel-control.prev-next .last a:hover:after {
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/arrow-right-solid-orange.svg);
+    background-size: cover
+}
+
+.panel-control.prev-next a {
+    line-height: 27px;
+    color: #f05514
+}
+
+.panel-control.prev-next a:hover {
+    color: #cd3e02
+}
+
+.dd-menu-list {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 9
+}
+
+.dd-menu-list li {
+    display: block;
+    min-width: 190px;
+    font-size: 12px
+}
+
+.dd-menu-list li a {
+    display: block;
+    background: #f7f6f5;
+    padding: 10px 15px;
+    position: relative;
+    border-bottom: 1px solid #e4e4e4;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: inherit;
+    color: #1f384d!important
+}
+
+.dd-menu-list li a.dropdown-selector {
+    margin: 0
+}
+
+.dd-menu-list li a:hover {
+    background: #ece9e7;
+    cursor: pointer;
+    text-decoration: none
+}
+
+.dd-menu-list li a span {
+    font-size: 12px;
+    display: block
+}
+
+.dd-menu-list li .dd-hover-list {
+    display: none;
+    position: absolute;
+    top: 0;
+    border: 1px solid #e4e4e4;
+    box-sizing: content-box;
+    border-bottom: none
+}
+
+.radio-toggle {
+    overflow: hidden
+}
+
+.radio-toggle,
+.radio-toggle label {
+    float: left;
+    position: relative;
+    height: 24px
+}
+
+.radio-toggle label {
+    display: block;
+    top: 0;
+    padding: 0 12px;
+    line-height: 24px;
+    color: #285db5;
+    cursor: pointer;
+    font-size: 13px
+}
+
+.radio-toggle label.first {
+    background: url(https://vortex.accuweather.com/adc2010/images/bg-radio-toggle-first.png) no-repeat
+}
+
+.radio-toggle label.last {
+    border-left: 1px solid #95b5db;
+    background: url(https://vortex.accuweather.com/adc2010/images/bg-radio-toggle-last.png) 100% 0 no-repeat
+}
+
+.radio-toggle label.last:hover {
+    background-position: 100% -24px
+}
+
+.radio-toggle label.first:hover {
+    background-position: 0 -24px
+}
+
+.radio-toggle label.checked-first,
+.radio-toggle label.checked-first:hover {
+    background-position: 0 -48px
+}
+
+.radio-toggle label.checked-last,
+.radio-toggle label.checked-last:hover {
+    background-position: 100% -48px
+}
+
+.radio-toggle-focus label.first {
+    background-position: 0 -72px
+}
+
+.radio-toggle-focus label.last {
+    background-position: 100% -72px
+}
+
+.radio-toggle-focus label.last:hover {
+    background-position: 100% -96px
+}
+
+.radio-toggle-focus label.first:hover {
+    background-position: 0 -96px
+}
+
+.radio-toggle-focus label.checked-first,
+.radio-toggle-focus label.checked-first:hover {
+    background-position: 0 -120px
+}
+
+.radio-toggle-focus label.checked-last,
+.radio-toggle-focus label.checked-last:hover {
+    background-position: 100% -120px
+}
+
+.radio-toggle label input {
+    position: absolute;
+    left: -9999px;
+    top: 0
+}
+
+.settings-wrapper {
+    width: 990px;
+    margin: 20px auto;
+    padding-bottom: 10px
+}
+
+.settings-wrapper #wrap-country-settings {
+    float: left;
+    position: relative;
+    width: 70%
+}
+
+.settings-wrapper #bt-menu-country {
+    display: inline-block
+}
+
+.settings-wrapper #bt-menu-country span {
+    display: block;
+    text-indent: -99999px;
+    background-repeat: no-repeat;
+    width: 19px;
+    background-size: contain;
+    position: relative;
+    top: 1px;
+    margin-right: 24px
+}
+
+.settings-wrapper .ir:after {
+    content: "";
+    position: relative;
+    top: 0;
+    border-style: solid;
+    border-width: 6px 6px 0;
+    border-color: #1f384d transparent transparent;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 25px;
+    top: 5px
+}
+
+#country-breadcrumbs {
+    display: inline-block
+}
+
+#country-breadcrumbs li {
+    display: inline-block;
+    font-size: 11px;
+    max-width: 260px;
+    vertical-align: middle
+}
+
+#country-breadcrumbs li:after {
+    content: ">";
+    position: relative;
+    top: -1px;
+    padding-left: 5px;
+    font-size: 11px;
+    color: #999;
+    display: inline-block
+}
+
+#country-breadcrumbs a,
+#country-breadcrumbs strong {
+    color: rgba(31, 56, 77, .5);
+    font-size: 11px
+}
+
+#country-breadcrumbs strong {
+    color: #1f384d!important
+}
+
+#country-breadcrumbs .last:after {
+    content: ""
+}
+
+#country-breadcrumbs .active a,
+#country-breadcrumbs .active strong {
+    color: #1f384d;
+    font-size: 11px
+}
+
+.control-wrapper {
+    float: right;
+    width: 30%;
+    text-align: right!important
+}
+
+#bt-menu-settings,
+.control-wrapper {
+    position: relative;
+    padding-bottom: 10px
+}
+
+#bt-menu-settings {
+    color: #1f384d;
+    text-transform: uppercase;
+    top: -4px
+}
+
+#bt-menu-settings span {
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    margin-right: 5px
+}
+
+#bt-menu-settings span span {
+    margin-right: 0
+}
+
+#bt-menu-settings:after {
+    position: relative;
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    top: 3px;
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/settings-gear.svg);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%
+}
+
+#bt-menu-settings.active-hover-tab .menu-arrow,
+#bt-menu-settings.active-hover-tab span,
+#bt-menu-settings:hover,
+#bt-menu-settings:hover .menu-arrow,
+#bt-menu-settings:hover span {
+    color: #4c6071!important
+}
+
+#bt-menu-settings.active-hover-tab:after {
+    border-color: #4c6071 transparent transparent;
+    color: #4c6071!important
+}
+
+#header-davek {
+    display: block!important;
+    margin: 10px auto!important;
+    position: relative;
+    max-width: 980px;
+    min-height: 94px
+}
+
+#header-davek iframe {
+    display: block!important;
+    position: relative!important
+}
+
+#header-davek #header-davek-ps>div {
+    display: block!important;
+    margin: 0 auto!important
+}
+
+#header-davek+* {
+    z-index: 2
+}
+
+#add-interest-dropdown,
+#bt-menu-login,
+#country-selector,
+#country-selector-region,
+#current-city-menu,
+#current-country-menu,
+#locations-dropdown-menu,
+#menu-body-lt,
+#menu-cities,
+#menu-country,
+#menu-premium,
+#menu-settings,
+#nav-featured,
+#nav-interests-carousel {
+    display: none
+}
+
+#current-country-menu {
+    display: none!important
+}
+
+.local-weather-dropdown,
+.special-forecast-dropdown {
+    display: none
+}
+
+#wrap-header-nav {
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 -5px 11px -9px #000
+}
+
+#wrap-header-nav #header-nav {
+    background: none
+}
+
+#wrap-header-nav .i-1-header {
+    background-image: none
+}
+
+#wrap-header-nav #header-logo {
+    display: block;
+    position: relative;
+    height: 55px;
+    width: 250px;
+    float: left
+}
+
+#wrap-header-nav #header-logo.no-partner {
+    top: 5px
+}
+
+#wrap-header-nav #header-logo span {
+    display: block;
+    width: 250px;
+    height: 36px;
+    text-indent: -99999px;
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/AccuWeather_LogoOrange.svg) no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+#wrap-header-nav #header-logo .brand-title {
+    position: absolute!important;
+    background: none;
+    top: 30px;
+    text-indent: 0;
+    height: auto;
+    left: 137px
+}
+
+#wrap-header-nav #header-logo .brand-logo {
+    position: absolute;
+    height: auto;
+    top: 2px;
+    left: 257px;
+    background: none;
+    width: 50px
+}
+
+#wrap-header-nav #header-logo .brand-logo img {
+    height: 43px;
+    width: 40px;
+    display: block
+}
+
+#wrap-header-nav #header-logo.brand-partner {
+    border: none;
+    margin: 0;
+    padding: 0
+}
+
+#wrap-header-nav #header-logo.huafeng span {
+    width: 190px;
+    top: -2px
+}
+
+#wrap-header-nav #header-logo .brand-title {
+    left: 135px;
+    top: auto;
+    bottom: 7px
+}
+
+#wrap-header-nav #header-logo .brand-logo.huafeng {
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/huafeng_0217.png) no-repeat;
+    width: 125px;
+    height: 26px;
+    background-size: 125px 26px;
+    top: 25px;
+    left: 30px
+}
+
+#header {
+    width: 990px;
+    margin: 0 auto
+}
+
+#header-logo-search {
+    padding-top: 10px;
+    position: relative
+}
+
+#header-logo-search label {
+    display: none
+}
+
+#header-logo-search .right-side {
+    width: 525px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding-top: 2px
+}
+
+#header-logo-search #wrap-s-rt {
+    float: left;
+    width: 350px
+}
+
+#header-logo-search #control-panel {
+    display: block;
+    width: 140px;
+    float: right
+}
+
+#header-logo-search #social-connect .label {
+    margin-top: 0;
+    padding-top: 0
+}
+
+#header-logo-search #social-connect .social-icon {
+    display: inline-block
+}
+
+#header-logo-search #social-connect .social-icon a {
+    background-size: cover;
+    display: inline-block;
+    height: 26px;
+    width: 26px;
+    margin-top: 7px;
+    border-radius: 200px;
+    cursor: pointer
+}
+
+#connect_facebook {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/facebook.svg)
+}
+
+#connect_instagram {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/instagram.svg)
+}
+
+#connect_youtube {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/youtube.svg)
+}
+
+#connect_twitter {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/twitter.svg)
+}
+
+#findcity {
+    overflow: hidden;
+    background: #edeceb;
+    width: 350px;
+    height: 42px;
+    border-radius: 3px;
+    border: 1px solid #999
+}
+
+#findcity input {
+    width: 300px;
+    padding-left: 15px;
+    font-size: 16px;
+    color: #1f384d;
+    -webkit-font-smoothing: antialiased
+}
+
+#findcity .bt-go,
+#findcity input {
+    height: 42px;
+    border: none;
+    background: none;
+    outline: none
+}
+
+#findcity .bt-go {
+    cursor: pointer;
+    width: 42px;
+    float: right
+}
+
+.inner-city-header {
+    width: 100%;
+    background: #141d26
+}
+
+.inner-city-header #nav-main-add-interests {
+    width: 990px;
+    margin: 0 auto
+}
+
+.inner-city-header #nav-current-location li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center
+}
+
+.inner-city-header #nav-current-location li a {
+    color: #999;
+    display: block;
+    border-left: 1px solid #2c343c;
+    padding: 13px 18px
+}
+
+.inner-city-header #nav-current-location li a:hover {
+    text-decoration: none;
+    background: #223141
+}
+
+.inner-city-header #nav-current-location>li {
+    float: left
+}
+
+.inner-city-header #nav-current-location>li>a {
+    color: #c3c3c3
+}
+
+.inner-city-header #nav-current-location li.selected:after {
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    background: #f05514
+}
+
+.inner-city-header #nav-current-location li.selected>a {
+    color: #fff
+}
+
+.inner-city-header #nav-current-location li#locations-dropdown-tab {
+    border-left: 1px solid #2c343c;
+    border-right: 1px solid #2c343c
+}
+
+.inner-city-header #current-country-tab h1,
+.inner-city-header #current-country-tab h2 {
+    display: inline
+}
+
+.inner-city-header .current-city,
+.inner-city-header .current-country,
+.inner-city-header .title {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 155px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.inner-city-header .current-city h1 {
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.inner-city-header #current-city-tab a:hover {
+    background: #223141
+}
+
+.inner-city-header #current-city-tab .icon {
+    position: absolute;
+    top: 5px;
+    margin-left: 5px
+}
+
+.inner-city-header #current-city-tab .local-temp {
+    margin-left: 46px;
+    display: inline-block;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2)
+}
+
+.inner-city-header #locations-dropdown-tab a {
+    border-left: none!important;
+    padding-left: 10px!important;
+    padding-right: 10px!important
+}
+
+.inner-city-header #locations-dropdown-tab a:hover {
+    background: #223141
+}
+
+.inner-city-header #locations-dropdown-tab .arrow {
+    position: relative;
+    top: 13px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 6px 0;
+    border-color: #999 transparent transparent
+}
+
+.inner-city-header #special-forecasts-dropdown-tab {
+    border-right: 1px solid #2c343c
+}
+
+.inner-city-header #special-forecasts-dropdown-tab a {
+    border-left: 0!important
+}
+
+.inner-city-header #special-forecasts-dropdown-tab a:hover {
+    background: #223141
+}
+
+.inner-city-header #special-forecasts-dropdown-tab .arrow {
+    position: relative;
+    top: 0;
+    border-style: solid;
+    border-width: 6px 6px 0;
+    border-color: #999 transparent transparent;
+    width: 0;
+    height: 0;
+    left: 5px;
+    display: none
+}
+
+.inner-subnav {
+    width: 100%;
+    background: #3b4148;
+    box-shadow: inset 0 10px 9px -12px #000
+}
+
+.inner-subnav .subnav-head-tabs-rt {
+    width: 990px;
+    margin: 0 auto
+}
+
+.inner-subnav .subnav-tab-buttons {
+    width: 100%;
+    display: block;
+    font-size: 0
+}
+
+.inner-subnav .subnav-tab-buttons li {
+    display: inline-block;
+    font-size: 0;
+    box-shadow: inset 0 10px 9px -12px #000;
+    text-align: center;
+    background: #3b4148;
+    vertical-align: middle;
+    border-left: 1px solid #4f545b
+}
+
+.inner-subnav .subnav-tab-buttons li.last {
+    border-right: 1px solid #4f545b
+}
+
+.inner-subnav .subnav-tab-buttons li a {
+    cursor: pointer;
+    padding: 10px 25px;
+    vertical-align: middle;
+    display: block;
+    color: #c3c3c3
+}
+
+.inner-subnav .subnav-tab-buttons li a:active,
+.inner-subnav .subnav-tab-buttons li a:focus,
+.inner-subnav .subnav-tab-buttons li a:hover {
+    text-decoration: none
+}
+
+.inner-subnav .subnav-tab-buttons li:hover {
+    background: #525a64
+}
+
+.inner-subnav .subnav-tab-buttons li.current {
+    position: relative
+}
+
+.inner-subnav .subnav-tab-buttons li.current a {
+    color: #fff
+}
+
+.inner-subnav .subnav-tab-buttons li.current:after {
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    background: #f05514
+}
+
+.inner-subnav .subnav-tab-buttons li#subnavpromo {
+    position: relative;
+    text-align: left;
+    float: right;
+    background: #f05514
+}
+
+.inner-subnav .subnav-tab-buttons li#subnavpromo a {
+    padding: 10px 15px
+}
+
+.inner-subnav .subnav-tab-buttons li#subnavpromo img {
+    display: none
+}
+
+.inner-subnav .subnav-tab-buttons li#subnavpromo span {
+    display: inline-block;
+    color: #fff
+}
+
+.inner-subnav .subnav-tab-buttons li#subnavpromo span:after {
+    display: inline-block;
+    content: "";
+    height: 15px;
+    width: 15px;
+    margin-left: 10px;
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/arrow-left-white.png);
+    background-size: cover;
+    vertical-align: middle
+}
+
+.inner-subnav .subnav-tab-buttons li#subnavpromo:hover {
+    background: #ff6220
+}
+
+.en-gb .inner-city-header .title,
+.en-us .inner-city-header .title {
+    max-width: 153px
+}
+
+#current-city-tab {
+    position: relative
+}
+
+#menu-cities {
+    position: absolute;
+    background: #fff;
+    z-index: 15;
+    width: 350px
+}
+
+#menu-cities ul.menu-items {
+    border: 1px solid #c8c8c8
+}
+
+#menu-cities ul.menu-items li {
+    border-bottom: 1px solid #eae9e8;
+    padding: 0
+}
+
+#menu-cities ul.menu-items li a {
+    display: block;
+    color: #141d26;
+    padding: 12px;
+    padding-right: 75px;
+    position: relative
+}
+
+#menu-cities ul.menu-items li a.hover,
+#menu-cities ul.menu-items li a:hover {
+    background: #f7f6f5
+}
+
+#menu-cities ul.menu-items li a span {
+    position: absolute;
+    text-align: right;
+    right: 12px
+}
+
+#menu-cities ul.menu-items li a span.icon {
+    background-size: 30px 30px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    right: 45px
+}
+
+#menu-cities ul.menu-items li a span.premium {
+    font-size: 12px;
+    max-width: 70px
+}
+
+#menu-cities ul.menu-items li.title {
+    color: #00afbe;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    border-top: 1px solid #eae9e8;
+    position: relative;
+    padding: 10px;
+    border-bottom: none
+}
+
+#menu-cities ul.menu-items li.title span {
+    position: absolute;
+    right: 10px;
+    font-size: 12px
+}
+
+#menu-cities ul.menu-items li.free-premium {
+    border-bottom: none
+}
+
+#menu-cities ul.menu-items li.free-premium span.premium {
+    color: #999;
+    float: none
+}
+
+#menu-cities ul.menu-items li.more a span {
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/arrow-right-solid-orange.svg);
+    background-size: 20px 20px;
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    display: inline-block
+}
+
+#menu-cities ul.menu-items:last-child {
+    border-top: 1px solid #eae9e8
+}
+
+.inner-city-header #nav-current-location li .local-weather-dropdown {
+    position: absolute;
+    width: 100%;
+    z-index: 12;
+    background: #141d26
+}
+
+.inner-city-header #nav-current-location li .local-weather-dropdown .inner {
+    text-align: left;
+    padding-bottom: 15px
+}
+
+.inner-city-header #nav-current-location li .local-weather-dropdown h2 {
+    padding-left: 20px
+}
+
+.inner-city-header #nav-current-location li .local-weather-dropdown li {
+    height: auto;
+    background: #141d26;
+    display: block;
+    text-align: left;
+    line-height: 30px
+}
+
+.inner-city-header #nav-current-location li .local-weather-dropdown li:hover {
+    background: #223141
+}
+
+.inner-city-header #nav-current-location li .local-weather-dropdown a {
+    -webkit-font-smoothing: antialiased;
+    padding-top: 4px;
+    padding-bottom: 4px
+}
+
+.sub-header-wrap {
+    position: relative;
+    margin-bottom: 15px
+}
+
+.sub-header-wrap .country-dropdown,
+.sub-header-wrap .special-forecast-dropdown {
+    border-top: 1px solid #2c343c;
+    padding-bottom: 20px;
+    position: absolute;
+    background: #141d26;
+    width: 100%;
+    z-index: 12
+}
+
+.sub-header-wrap .country-dropdown .inner,
+.sub-header-wrap .special-forecast-dropdown .inner {
+    margin: 0 auto;
+    width: 990px;
+    height: 100%
+}
+
+.sub-header-wrap .country-dropdown .col,
+.sub-header-wrap .special-forecast-dropdown .col {
+    width: 25%;
+    float: left
+}
+
+.sub-header-wrap .country-dropdown h3,
+.sub-header-wrap .country-dropdown ul,
+.sub-header-wrap .special-forecast-dropdown h3,
+.sub-header-wrap .special-forecast-dropdown ul {
+    margin-left: 30px
+}
+
+.sub-header-wrap .country-dropdown h3 a,
+.sub-header-wrap .special-forecast-dropdown h3 a {
+    padding-bottom: 0
+}
+
+.sub-header-wrap .country-dropdown li,
+.sub-header-wrap .special-forecast-dropdown li {
+    margin-bottom: 2px
+}
+
+.sub-header-wrap .country-dropdown a,
+.sub-header-wrap .special-forecast-dropdown a {
+    border-radius: 2px;
+    display: block;
+    padding: 5px 0;
+    color: grey
+}
+
+.sub-header-wrap .country-dropdown a:hover,
+.sub-header-wrap .special-forecast-dropdown a:hover {
+    color: #fff;
+    text-decoration: none
+}
+
+.sub-header-wrap .special-forecast-dropdown h2 {
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    margin: .5em 30px .75em
+}
+
+.sub-header-wrap .special-forecast-dropdown h2:hover .icon-pencil {
+    opacity: 1
+}
+
+.sub-header-wrap .special-forecast-dropdown .icon-pencil {
+    background-color: #4f565c;
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/icon-pencil.svg);
+    background-size: 75%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    height: 24px;
+    width: 24px;
+    top: 2px;
+    margin-left: 4px;
+    opacity: .8
+}
+
+.sub-header-wrap .special-forecast-dropdown .no-select {
+    background: #373f47;
+    padding-left: 10px!important;
+    padding-right: 10px
+}
+
+.sub-header-wrap .special-forecast-dropdown li {
+    position: relative
+}
+
+.sub-header-wrap .special-forecast-dropdown li a {
+    max-width: 73%
+}
+
+.sub-header-wrap .special-forecast-dropdown li .remove {
+    color: grey;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 6px;
+    left: 140px
+}
+
+.sub-header-wrap .special-forecast-dropdown li .remove:hover {
+    color: #fff
+}
+
+.sub-header-wrap .special-forecast-dropdown li:hover .remove {
+    display: block
+}
+
+.sub-header-wrap .special-forecast-dropdown.edit-mode .icon-pencil {
+    opacity: 1
+}
+
+.sub-header-wrap .special-forecast-dropdown.edit-mode li a {
+    position: relative;
+    padding-left: 22px
+}
+
+.sub-header-wrap .special-forecast-dropdown.edit-mode li a:before {
+    border: 2px solid;
+    border-radius: 3px;
+    content: "";
+    display: block;
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    left: 0;
+    top: 4px
+}
+
+.sub-header-wrap .special-forecast-dropdown.edit-mode li a.no-select:before {
+    display: none
+}
+
+.sub-header-wrap .special-forecast-dropdown.edit-mode li a.favorite {
+    color: #fff!important
+}
+
+.sub-header-wrap .special-forecast-dropdown.edit-mode li a.favorite:after {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/checkmark.svg);
+    content: "";
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: 2px;
+    height: 18px;
+    width: 18px;
+    background-size: cover
+}
+
+.sub-header-wrap .country-dropdown {
+    min-height: 180px;
+    display: none
+}
+
+.sub-header-wrap .recent-locations-dropdown {
+    display: none;
+    border-top: 1px solid #2c343c;
+    position: absolute;
+    background: #141d26;
+    width: 100%;
+    z-index: 12
+}
+
+.sub-header-wrap .recent-locations-dropdown h2 {
+    color: #fff;
+    padding: 15px 0;
+    -webkit-font-smoothing: antialiased
+}
+
+.sub-header-wrap .recent-locations-dropdown .inner {
+    width: 990px;
+    background: #141d26;
+    margin: 0 auto
+}
+
+.sub-header-wrap .recent-locations-dropdown .panel-list li {
+    height: auto;
+    padding: 15px 0 15px 15px
+}
+
+.sub-header-wrap .recent-locations-dropdown .panel-list .day,
+.sub-header-wrap .recent-locations-dropdown .panel-list .night {
+    min-height: 221px
+}
+
+.sub-header-wrap .recent-locations-dropdown .panel-list .day:hover,
+.sub-header-wrap .recent-locations-dropdown .panel-list .night:hover {
+    background: #223141!important
+}
+
+.feature-module #popular-locations .temp .sub-header-wrap .recent-locations-dropdown .panel-list .large-temp,
+.sub-header-wrap .recent-locations-dropdown .panel-list .feature-module #popular-locations .temp .large-temp,
+.sub-header-wrap .recent-locations-dropdown .panel-list .large-temp {
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    display: block
+}
+
+.sub-header-wrap .recent-locations-dropdown .panel-list .icon {
+    margin-top: 10px
+}
+
+.sub-header-wrap .recent-locations-dropdown .panel-list .real-feel {
+    color: #999;
+    margin-top: 5px;
+    -webkit-font-smoothing: antialiased;
+    font-size: 12px
+}
+
+.sub-header-wrap .recent-locations-dropdown .panel-list .temp {
+    margin-top: 5px
+}
+
+.sub-header-wrap .recent-locations-dropdown #feed-tabs {
+    background: none;
+    border: none;
+    border-left: 1px solid #2c343c
+}
+
+.sub-header-wrap .recent-locations-dropdown #feed-tabs li {
+    width: 20%;
+    background: none;
+    border: none;
+    border-right: 1px solid #2c343c;
+    padding-right: 15px;
+    vertical-align: top
+}
+
+.sub-header-wrap .recent-locations-dropdown #feed-tabs .special-forecast {
+    margin-top: 20px
+}
+
+.sub-header-wrap .recent-locations-dropdown #feed-tabs .special-forecast li {
+    display: inline-block;
+    width: auto;
+    padding: 0;
+    margin-right: 4px;
+    margin-bottom: 2px
+}
+
+.sub-header-wrap .recent-locations-dropdown #feed-tabs .special-forecast li:hover {
+    background: #141d26
+}
+
+.sub-header-wrap .recent-locations-dropdown #feed-tabs .special-forecast a {
+    display: inline-block;
+    background: #434a51;
+    padding: 0 6px;
+    line-height: 25px;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 2px
+}
+
+.sub-header-wrap .recent-locations-dropdown #feed-tabs .special-forecast a:hover {
+    text-decoration: none;
+    background: #5a646d
+}
+
+#special-forecasts-dropdown-tab span span {
+    display: inline-block;
+    margin: -12px 0
+}
+
+#special-forecasts-dropdown-tab span span:after {
+    content: "";
+    display: inline-block;
+    margin-left: 6px;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    border-style: solid;
+    border-width: 6px 6px 0;
+    border-color: gray transparent transparent
+}
+
+#special-forecasts-dropdown-tab span span.highlighted {
+    color: #82b441
+}
+
+#special-forecasts-dropdown-tab span span.highlighted:after {
+    border-color: #82b441 transparent transparent
+}
+
+#special-forecasts-dropdown-tab.active-hover-tab span span:after {
+    border-color: #fff transparent transparent
+}
+
+#menu-month,
+#menu-year {
+    background: #f7f6f5;
+    width: 130px;
+    left: 0;
+    position: absolute;
+    z-index: 2;
+    border: 1px solid #c8c8c8;
+    top: 35px;
+    border-radius: 2px
+}
+
+#menu-month a,
+#menu-year a {
+    border-radius: 0;
+    top: 0;
+    cursor: pointer;
+    font-weight: 700;
+    padding-left: 15px;
+    font-size: 13px;
+    color: #1f384d;
+    display: block;
+    line-height: 27px;
+    border-bottom: 1px solid #c8c8c8
+}
+
+#menu-month a:hover,
+#menu-year a:hover {
+    text-decoration: none;
+    background: #eaeaea
+}
+
+#menu-year {
+    height: auto;
+    width: 77px
+}
+
+.radio-toggle {
+    height: 34px
+}
+
+.radio-toggle label {
+    height: 29px
+}
+
+#menu-settings #radio-toggle-temp-unit {
+    margin-top: 15px
+}
+
+#menu-settings #radio-toggle-temp-unit span {
+    color: #fff
+}
+
+#menu-settings #radio-toggle-temp-unit .first,
+#menu-settings #radio-toggle-temp-unit .last {
+    border: 1px solid #c8c8c8
+}
+
+#menu-settings #radio-toggle-temp-unit .first span,
+#menu-settings #radio-toggle-temp-unit .last span {
+    color: #1f384d;
+    font-size: 13px
+}
+
+#menu-settings #radio-toggle-temp-unit .first:hover,
+#menu-settings #radio-toggle-temp-unit .last:hover {
+    background: #eaeaea
+}
+
+#menu-settings #radio-toggle-temp-unit .first {
+    background: #f7f6f5;
+    border-radius: 2px;
+    margin-right: 3px
+}
+
+#menu-settings #radio-toggle-temp-unit .last {
+    background: #f7f6f5;
+    border-radius: 2px
+}
+
+#menu-settings #radio-toggle-temp-unit .checked {
+    background: #f05514;
+    border: 1px solid #cd3e02
+}
+
+#menu-settings #radio-toggle-temp-unit .checked span {
+    color: #fff
+}
+
+#menu-settings #radio-toggle-temp-unit .checked:hover {
+    background: #f05514
+}
+
+.highlighted {
+    color: #82b441!important
+}
+
+#menu-country {
+    background: #141d26;
+    color: #fff;
+    min-width: 234px;
+    left: -9px!important;
+    padding-top: 10px;
+    position: absolute;
+    top: -8px!important;
+    z-index: 13
+}
+
+#menu-country .menu-title {
+    font-weight: 700;
+    padding-right: 20px
+}
+
+#menu-country .menu-title span {
+    background-repeat: no-repeat;
+    padding-left: 9px
+}
+
+#menu-country .menu-title span span {
+    padding-left: 28px;
+    background-position: 0 4px
+}
+
+#menu-country h4 {
+    font-size: 12px;
+    padding: 4px 10px 8px;
+    border-bottom: 1px solid #c8c8c8
+}
+
+#menu-country .menu-items a {
+    color: #fff;
+    display: block;
+    padding: 5px 10px 5px 40px;
+    background-position: 10px 4px;
+    background-repeat: no-repeat
+}
+
+#menu-country #bt-more-countries {
+    text-align: center;
+    margin: 10px;
+    background-color: #999;
+    color: #fff;
+    display: block;
+    padding: 6px;
+    border-radius: 2px;
+    text-decoration: none
+}
+
+#menu-country #bt-more-countries:hover {
+    background-color: #d6d3d2;
+    color: #1f384d
+}
+
+#country-selector {
+    width: 970px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 17;
+    display: none
+}
+
+#country-selector .panel-body {
+    background: #fff;
+    padding: 3px
+}
+
+#country-selector .title {
+    overflow: hidden;
+    zoom: 100%;
+    padding-bottom: 4px
+}
+
+#country-selector .bt-panel-close {
+    margin: 0;
+    float: right
+}
+
+#country-selector-recent {
+    float: left;
+    width: 900px;
+    padding-left: 10px;
+    overflow: hidden;
+    zoom: 100%;
+    padding-top: 10px
+}
+
+#country-selector-recent h3 {
+    font-size: 12px;
+    line-height: 16px;
+    float: left;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #00afbe
+}
+
+#country-selector-recent ul {
+    float: left;
+    margin-left: 16px
+}
+
+#country-selector-recent ul li {
+    margin-left: 40px;
+    float: left
+}
+
+#country-selector-recent ul li.first {
+    margin-left: 0
+}
+
+#country-selector-recent ul li a {
+    padding-left: 30px;
+    background-repeat: no-repeat;
+    font-weight: 700;
+    font-size: 12px
+}
+
+#country-selector-notes {
+    font-size: 10px;
+    padding: 8px 4px;
+    background: #f2f2f2;
+    overflow: hidden;
+    zoom: 100%
+}
+
+#country-selector-notes p {
+    font-size: 10px!important;
+    float: left;
+    border: none;
+    border-left: 1px solid #000;
+    padding: 0 14px;
+    line-height: 1.2em;
+    margin: 0
+}
+
+#country-selector-notes p.first {
+    border-left: none;
+    padding-left: 4px
+}
+
+#country-selector {
+    display: none
+}
+
+#country-selector .panel-content {
+    background-color: #f2f2f2;
+    padding: 14px 6px 6px;
+    height: 460px;
+    overflow: auto
+}
+
+#country-selector ul.menu-items {
+    float: left
+}
+
+#country-selector ul.menu-items li {
+    text-decoration: none;
+    margin: 8px 0 0;
+    list-style-type: none;
+    padding: 0
+}
+
+#country-selector ul.menu-items li a {
+    display: block
+}
+
+#country-selector ul.menu-items li a.hover,
+#country-selector ul.menu-items li a:hover {
+    color: #f05514;
+    text-decoration: none
+}
+
+#country-selector-region-list {
+    margin-top: 10px;
+    width: 195px
+}
+
+#country-selector-region-list li a {
+    font-size: 17px;
+    padding: 4px 10px 6px 23px
+}
+
+#country-selector-region .title {
+    padding-left: 23px;
+    padding-top: 10px
+}
+
+#country-selector-region .title h3 {
+    font-size: 12px;
+    font-weight: 700;
+    color: #999
+}
+
+#country-selector-country .title .world,
+#country-selector-country li a,
+#country-selector-recent li a,
+#country-selector-region li a {
+    color: #1f384d
+}
+
+#country-selector-region-map {
+    position: relative;
+    float: left;
+    margin-top: 10px
+}
+
+#country-selector-region-map .map-region {
+    display: block;
+    text-indent: -9999px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: none
+}
+
+#country-selector-region-map .map-popup {
+    position: absolute;
+    background: url(https://vortex.accuweather.com/adc2010/images/bg-map-popup.png) 0 100% no-repeat;
+    top: 0;
+    left: 0;
+    width: 297px;
+    display: none;
+    cursor: pointer
+}
+
+#country-selector-region-map .map-popup .body {
+    padding-left: 58px;
+    background: url(https://vortex.accuweather.com/adc2010/images/bg-map-popup-body.png) 0 0 no-repeat
+}
+
+#country-selector-region-map .map-popup .content {
+    overflow: hidden;
+    padding-right: 6px;
+    zoom: 100%
+}
+
+#country-selector-region-map .map-popup .content p {
+    margin: 0
+}
+
+#country-selector-region-map .map-popup .content img {
+    float: left;
+    margin-right: 8px
+}
+
+#country-selector-region-map .map-popup .foot {
+    height: 33px;
+    padding-left: 68px;
+    font-size: 10px;
+    line-height: 28px;
+    color: #868686;
+    font-weight: 700
+}
+
+#country-selector-region-map .body h4 {
+    font-size: 10px;
+    font-weight: 400;
+    color: #000;
+    padding: 10px 10px 2px
+}
+
+#map-region-cac {
+    left: 116px;
+    top: 144px;
+    width: 75px;
+    height: 41px
+}
+
+#map-region-sam {
+    left: 143px;
+    top: 162px;
+    width: 106px;
+    height: 184px
+}
+
+#map-region-afr {
+    left: 282px;
+    top: 109px;
+    width: 155px;
+    height: 185px
+}
+
+#map-region-nam {
+    left: 7px;
+    top: 4px;
+    width: 245px;
+    height: 161px
+}
+
+#map-region-ocn {
+    left: 569px;
+    top: 209px;
+    width: 131px;
+    height: 115px
+}
+
+#map-region-mea {
+    left: 379px;
+    top: 87px;
+    width: 118px;
+    height: 84px
+}
+
+#map-region-eur {
+    left: 291px;
+    top: 7px;
+    width: 168px;
+    height: 108px
+}
+
+#map-region-asi {
+    left: 421px;
+    top: 8px;
+    width: 231px;
+    height: 223px
+}
+
+#map-region-arc {
+    left: 229px;
+    top: 4px;
+    width: 90px;
+    height: 49px
+}
+
+#map-region-sam.hover,
+#map-region-sam:hover {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/worldmap/bg-region-south-america.png)
+}
+
+#map-region-cac.hover,
+#map-region-cac:hover {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/worldmap/bg-region-central-america.png)
+}
+
+#map-region-nam.hover,
+#map-region-nam:hover {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/worldmap/bg-region-north-america.png)
+}
+
+#map-region-afr.hover,
+#map-region-afr:hover {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/worldmap/bg-region-africa.png)
+}
+
+#map-region-eur.hover,
+#map-region-eur:hover {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/worldmap/bg-region-europe.png)
+}
+
+#map-region-asi.hover,
+#map-region-asi:hover {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/worldmap/bg-region-asia.png)
+}
+
+#map-region-mea.hover,
+#map-region-mea:hover {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/worldmap/bg-region-middle-east.png)
+}
+
+#map-region-ocn.hover,
+#map-region-ocn:hover {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/worldmap/bg-region-oceana.png)
+}
+
+#map-region-arc.hover,
+#map-region-arc:hover {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/worldmap/bg-region-arctic.png)
+}
+
+#country-selector-country .title {
+    font-size: 17px;
+    padding-bottom: 10px;
+    padding-left: 10px
+}
+
+#country-selector-country .title .world {
+    font-weight: 400;
+    padding-left: 12px;
+    background: url(https://vortex.accuweather.com/adc2010/images/bg-region-world.gif) 0 6px no-repeat;
+    float: left
+}
+
+#country-selector-country .title h3 {
+    float: left;
+    font-size: 17px;
+    font-weight: 400;
+    padding-left: 20px;
+    color: #000;
+    background: url(https://vortex.accuweather.com/adc2010/images/bg-region-h3.gif) 7px 8px no-repeat
+}
+
+#country-selector-country .title .news-bubble {
+    float: left;
+    font-size: 10px;
+    margin-left: 20px;
+    padding-right: 4px;
+    background: url(https://vortex.accuweather.com/adc2010/images/bg-news-bubble.png) 100% 0 no-repeat;
+    height: 26px
+}
+
+#country-selector-country .title .news-bubble div {
+    background: url(https://vortex.accuweather.com/adc2010/images/bg-news-bubble-div.png) 0 0 no-repeat;
+    height: 26px;
+    line-height: 26px;
+    padding-right: 40px
+}
+
+#country-selector-country .title .news-bubble h4 {
+    font-size: 1em;
+    font-weight: 400;
+    float: left;
+    background: #fff;
+    margin-left: 14px;
+    height: 26px;
+    padding-left: 10px;
+    padding-right: 12px;
+    line-height: 26px
+}
+
+#country-selector-country .title .news-bubble a {
+    padding-left: 12px;
+    font-size: 12px;
+    line-height: 24px
+}
+
+#country-selector-country .items {
+    padding-left: 22px;
+    padding-top: 14px
+}
+
+#country-selector-country .region ul {
+    float: left
+}
+
+#country-selector-country .region h5 {
+    font-weight: 400;
+    padding-bottom: 10px
+}
+
+#country-selector-country .has-2-col ul {
+    width: 310px
+}
+
+#country-selector-country .has-3-col ul {
+    width: 290px
+}
+
+#country-selector-country .has-4-col ul {
+    width: 220px
+}
+
+#country-selector-country ul.menu-items li {
+    margin-top: 2px;
+    margin-right: 10px;
+    overflow: hidden
+}
+
+#country-selector-country li a {
+    font-size: 13px;
+    padding: 2px 10px 4px
+}
+
+button.bt-panel-close {
+    border: 0;
+    width: 36px;
+    height: 36px;
+    background-image: url(https://vortex.accuweather.com/adc2010/images/bt-panel-close.png);
+    text-indent: -9999px;
+    float: right
+}
+
+.bt-panel-close:hover {
+    background-position: 0 -36px
+}
+
+.bt-panel-close:active {
+    background-position: 0 -72px
+}
+
+.modal-underlay {
+    background: #141d27!important;
+    opacity: .85!important;
+    z-index: 13
+}
+
+#menu-settings .menu-title span {
+    margin-top: 2px;
+    padding-right: 13px
+}
+
+#menu-settings {
+    background: #fff;
+    color: #1f384d;
+    left: auto!important;
+    right: 0!important;
+    top: 2px!important;
+    padding: 10px;
+    position: absolute;
+    width: 206px;
+    -webkit-transform: translateX(15px);
+    transform: translateX(15px);
+    z-index: 13
+}
+
+#menu-settings .menu-title {
+    display: none
+}
+
+#menu-settings .radio-toggle label {
+    padding: 10px 15px;
+    line-height: inherit;
+    height: inherit
+}
+
+#menu-settings h4 {
+    font-size: 12px;
+    margin-top: 0;
+    text-align: left
+}
+
+#menu-premium .menu-title,
+#menu-settings .menu-title {
+    text-align: right
+}
+
+#menu-settings .menu-body {
+    padding: 4px 8px
+}
+
+#menu-settings .radio-toggle {
+    margin-top: 10px
+}
+
+#menu-settings #radio-toggle-length-unit {
+    float: right
+}
+
+#menu-settings select {
+    -webkit-appearance: none;
+    font-size: 14px;
+    width: 100%;
+    margin: 15px auto 10px;
+    display: block;
+    padding: 5px;
+    color: #1f384d;
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/drop-arrow-text_navy.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-size: 12px
+}
+
+.feature-module {
+    height: 350px;
+    overflow: hidden;
+    position: relative
+}
+
+.feature-module .feature-radar {
+    width: 50%;
+    float: left
+}
+
+.feature-module .feature-radar .full-width-button {
+    width: 302px;
+    position: absolute;
+    bottom: 0
+}
+
+.feature-module .feature-locations {
+    float: left;
+    height: 100%;
+    overflow: auto;
+    width: 50%
+}
+
+.feature-module .radar-info {
+    background: #f7f6f5
+}
+
+.feature-module .radar-info h3 {
+    line-height: 25px;
+    padding: 15px;
+    background: #f7f6f5;
+    position: relative;
+    z-index: 1
+}
+
+.feature-module .radar-info h3 strong {
+    display: block
+}
+
+.feature-module #popular-locations {
+    box-shadow: inset 7px 0 9px -11px #000
+}
+
+.feature-module #popular-locations h4 {
+    padding: 15px 15px 2px
+}
+
+.feature-module #popular-locations li {
+    height: 103px;
+    padding: 15px;
+    padding-bottom: 0;
+    border-bottom: 1px solid #c8c8c8
+}
+
+.feature-module #popular-locations li:last-child {
+    border: 0
+}
+
+.feature-module #popular-locations .loc a {
+    margin-bottom: 6px;
+    margin-top: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.feature-module #popular-locations .loc a:hover {
+    color: #00def1
+}
+
+.feature-module #popular-locations .temp-set {
+    width: 185px;
+    float: left
+}
+
+.feature-module #popular-locations .temp .large-temp {
+    font-size: 28px;
+    display: block;
+    margin-bottom: 0
+}
+
+.feature-module #popular-locations .temp .small-temp {
+    padding-top: 0
+}
+
+.feature-module #popular-locations .cond {
+    padding-top: 3px;
+    padding-bottom: 0;
+    display: block
+}
+
+.feature-module #popular-locations .icon {
+    height: 64px;
+    width: 64px;
+    float: right
+}
+
+.article-wrap>span {
+    display: block;
+    margin: 15px;
+    padding: 0
+}
+
+.article-wrap h4 a:hover {
+    color: #435163
+}
+
+.article-wrap a:hover {
+    color: #cd3e02
+}
+
+.first.news-feed,
+.first .news-feed {
+    margin-top: 5px
+}
+
+#menu-news-tags {
+    display: none;
+    background: #f7f6f5;
+    width: 190px!important;
+    left: 399px;
+    position: absolute;
+    z-index: 8;
+    font-weight: 700;
+    border: 1px solid #c8c8c8;
+    margin-top: 23px
+}
+
+#menu-news-tags a {
+    cursor: pointer;
+    padding-left: 15px;
+    color: #1f384d;
+    font-size: 12px;
+    display: block;
+    line-height: 30px;
+    border-bottom: 1px solid #c8c8c8
+}
+
+#menu-news-tags a:hover {
+    text-decoration: none;
+    background: #e0ddd9
+}
+
+.news-feed {
+    width: 100%;
+    background: #fff
+}
+
+.news-feed .sub-title,
+.news-feed h2,
+.news-feed h3 {
+    padding: 0;
+    margin: 15px
+}
+
+.news-feed #liveFeedTitle {
+    padding: 0 0 0 20px;
+    padding-left: 0
+}
+
+.news-feed .thefeed-tab-buttons {
+    padding: 0 15px
+}
+
+.news-feed .thefeed-tab-buttons li {
+    display: inline-block;
+    text-align: center;
+    margin: 15px 0
+}
+
+.news-feed .thefeed-tab-buttons li a {
+    display: block;
+    line-height: 30px;
+    background: #f7f6f5;
+    color: #1f384d;
+    font-weight: 700;
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    border: 1px solid #c8c8c8
+}
+
+.news-feed .thefeed-tab-buttons li a:active,
+.news-feed .thefeed-tab-buttons li a:focus,
+.news-feed .thefeed-tab-buttons li a:hover {
+    text-decoration: none
+}
+
+.news-feed .thefeed-tab-buttons li a.current,
+.news-feed .thefeed-tab-buttons li a.current:hover {
+    background: #f05514;
+    color: #fff;
+    border: 1px solid #f05514
+}
+
+.news-feed .thefeed-tab-buttons li a:hover {
+    background: #eaeaea
+}
+
+.news-feed #fdu-more-link a {
+    padding: 15px;
+    color: #f05514;
+    font-size: 16px;
+    display: block
+}
+
+.news-feed #fdu-more-link .cta {
+    float: left
+}
+
+.news-feed #fdu-more-link .arrow {
+    float: right;
+    text-indent: -99999px;
+    margin-top: -9px;
+    position: relative;
+    top: 5px;
+    width: 24px;
+    height: 24px;
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/arrow-right-solid-orange.svg) no-repeat;
+    background-position: 50%;
+    background-size: cover
+}
+
+.news-feed #fdu-more-link:hover {
+    background: #f2f1ef
+}
+
+.news-feed .articles>h4 {
+    margin: 0
+}
+
+.news-feed .articles>h4,
+.news-feed .articles li {
+    overflow: auto;
+    clear: both;
+    border-bottom: 1px solid #c8c8c8;
+    padding: 15px
+}
+
+.news-feed .articles li .wrap {
+    width: 120px;
+    height: 90px;
+    float: left;
+    display: block
+}
+
+.news-feed .articles li .info {
+    padding-left: 15px;
+    width: 78%;
+    float: left
+}
+
+.news-feed .articles li .info p {
+    padding-bottom: 0
+}
+
+.news-feed .articles li .info a:hover {
+    color: #3c6d96
+}
+
+.news-feed .articles li img {
+    width: 100%
+}
+
+.news-feed .articles li .cat {
+    font-size: 12px;
+    color: #f05514
+}
+
+.news-feed .articles li .cat:hover {
+    color: #f05514!important
+}
+
+.news-feed .articles li.no-thumb .wrap {
+    display: none
+}
+
+.news-feed .articles li.no-thumb .info {
+    padding-left: 0;
+    width: 100%
+}
+
+.news-feed .articles .major h5 {
+    padding-bottom: 5px
+}
+
+.news-feed .articles .major .wrap {
+    width: 50%;
+    height: auto
+}
+
+.news-feed .articles .major .info {
+    width: 50%
+}
+
+.news-feed .full-width-button .next,
+.news-feed .full-width-button .prev {
+    display: inline-block;
+    line-height: 42px;
+    vertical-align: middle
+}
+
+.news-feed .full-width-button .prev {
+    float: left
+}
+
+.news-feed .full-width-button .next {
+    float: right
+}
+
+.news-video-feed h4 a {
+    padding: 0;
+    color: #1f384d!important;
+    margin: 0
+}
+
+.news-video-feed h4 a:hover {
+    color: #356084!important
+}
+
+.news-video-feed .module-tabs {
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-bottom: 30px
+}
+
+.news-video-feed h2 {
+    float: left
+}
+
+.news-video-feed .panel-title {
+    position: relative;
+    overflow: visible
+}
+
+.sidebar-news-feed h3,
+.sidebar-news-feed h4 {
+    margin: 0;
+    padding: 15px
+}
+
+.sidebar-news-feed .module-tabs {
+    padding-top: 15px;
+    padding-left: 15px
+}
+
+.sidebar-news-feed .articles li {
+    overflow: auto;
+    clear: both;
+    border-bottom: 1px solid #c8c8c8;
+    padding: 15px
+}
+
+.sidebar-news-feed .articles li .wrap {
+    width: 60px;
+    height: 45px;
+    float: left;
+    display: block;
+    background: #f7f6f5
+}
+
+.sidebar-news-feed .articles li .info {
+    padding-left: 15px;
+    width: 73%;
+    float: left
+}
+
+.sidebar-news-feed .articles li .info p {
+    padding-bottom: 0
+}
+
+.sidebar-news-feed .articles li h6 a {
+    margin-bottom: 0
+}
+
+.sidebar-news-feed .articles li h6 a:hover {
+    color: #3c6d96
+}
+
+.sidebar-news-feed .articles li img {
+    width: 100%
+}
+
+.sidebar-news-feed .articles li .cat {
+    font-size: 12px;
+    color: #f05514
+}
+
+#crowdynews-main {
+    overflow: hidden;
+    height: 430px;
+    padding: 15px
+}
+
+#crowdynews-main .bbWidgetTitle {
+    margin: 0;
+    padding: 0 15px 15px 0
+}
+
+.carousel-home {
+    width: 605px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+#carousel-topstories,
+.carousel-car {
+    height: inherit!important
+}
+
+.carousel-home li {
+    float: left;
+    width: 605px
+}
+
+body#home #article-wrap {
+    padding: 0 0 2px
+}
+
+
+
+.carousel-panel {
+    position: relative
+}
+
+.carousel-panel .arrow-small-left,
+.carousel-panel .arrow-small-right {
+    height: 44px;
+    width: 22px;
+    z-index: 9;
+    position: absolute;
+    cursor: pointer;
+    text-indent: -99999px;
+    top: 57px
+}
+
+.carousel-panel .arrow-small-right {
+    right: -1px;
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/right-panel.png)
+}
+
+.carousel-panel .arrow-small-left {
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/left-panel.png)
+}
+
+.carousel-panel #carousel-topstories {
+    overflow: hidden;
+    position: relative;
+    display: block
+}
+
+.carousel-panel .article .wrap {
+    width: 230px;
+    height: 150px;
+    overflow: hidden;
+    float: left;
+    background: #f7f6f5
+}
+
+.carousel-panel .article .info {
+    float: left;
+    padding: 15px;
+    width: 56%
+}
+
+.carousel-panel .article p {
+    padding-top: 5px
+}
+
+.carousel-panel .article p a {
+    color: #f05514;
+    padding-left: 5px
+}
+
+.carousel-panel #carousel-pages ul {
+    text-align: center;
+    position: relative;
+    top: 6px
+}
+
+.carousel-panel #carousel-pages li {
+    display: inline-block;
+    float: none;
+    margin: 0 4px;
+    border: none;
+    height: 10px!important;
+    width: 10px!important;
+    background: #d6d3d2;
+    border-radius: 100px
+}
+
+#feature-history,
+.feature-stats {
+    overflow: hidden
+}
+
+#feature-history h3,
+.feature-stats h3 {
+    padding-left: 15px
+}
+
+#feature-history table,
+.feature-stats table {
+    margin-bottom: 10px
+}
+
+#feature-history thead tr,
+.feature-stats thead tr {
+    border: none
+}
+
+#feature-history thead th,
+.feature-stats thead th {
+    padding-left: 0;
+    color: #999;
+    text-align: left
+}
+
+#feature-history th,
+.feature-stats th {
+    padding-left: 15px;
+    color: #999
+}
+
+#feature-history td,
+#feature-history th,
+.feature-stats td,
+.feature-stats th {
+    vertical-align: middle
+}
+
+#feature-history time,
+.feature-stats time {
+    font-size: 12px;
+    font-weight: 400;
+    color: #999
+}
+
+#feature-history {
+    position: relative;
+    padding-bottom: 20px
+}
+
+#feature-history table th {
+    width: auto
+}
+
+#feature-history .more {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-size: 11px;
+    color: #ff684c
+}
+
+#feature-history .arrow {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/arrow-right-solid-orange.svg) no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 4px
+}
+
+.temp-summary-overview {
+    float: left;
+    width: 50%
+}
+
+.temp-summary-overview h3 time {
+    font-size: 12px;
+    color: #999
+}
+
+.temp-summary-overview table {
+    margin: 0
+}
+
+.temp-summary-overview .lt {
+    width: 100%!important
+}
+
+.temp-summary-prev {
+    width: 50%!important;
+    float: left;
+    box-shadow: inset 7px 0 9px -11px #000;
+    background: #f7f6f5
+}
+
+.temp-summary-prev table {
+    margin: 0
+}
+
+.temp-summary-prev table thead tr {
+    height: 70px
+}
+
+.temp-summary-prev table thead th {
+    padding-bottom: 10px;
+    vertical-align: bottom;
+    text-transform: uppercase
+}
+
+.temp-summary-prev table th {
+    width: 73%;
+    border-bottom: none!important
+}
+
+.temp-summary-prev table td,
+.temp-summary-prev table th {
+    vertical-align: top;
+    padding-top: 10px
+}
+
+.temp-summary-prev table tr {
+    height: 76px
+}
+
+.browse-bread-crumb {
+    background: #f2f2f2;
+    padding-left: 15px
+}
+
+.browse-bread-crumb li {
+    display: inline-block;
+    line-height: 30px
+}
+
+.browse-bread-crumb li a {
+    display: inline-block
+}
+
+.browse-bread-crumb li a span {
+    font-size: 13px;
+    color: #999
+}
+
+.browse-bread-crumb li:after {
+    content: ">";
+    color: #999;
+    position: relative;
+    top: -1px;
+    display: inline-block;
+    padding: 0 10px 0 5px;
+    font-size: 10px
+}
+
+.browse-bread-crumb li.back {
+    height: 20px;
+    width: 20px;
+    vertical-align: middle
+}
+
+.browse-bread-crumb li.back a {
+    height: 20px;
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/arrow-left-orange.svg);
+    background-size: cover;
+    width: 20px
+}
+
+.browse-bread-crumb li.back a:hover {
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/arrow-left-solid-orange.svg);
+    background-size: cover
+}
+
+.browse-bread-crumb li.back:after {
+    content: ""
+}
+
+.browse-bread-crumb li.current a span {
+    color: #1f384d
+}
+
+.browse-bread-crumb li:last-of-type:after {
+    content: ""
+}
+
+.results-list {
+    margin-top: 5px
+}
+
+.results-list h3 {
+    padding-left: 15px
+}
+
+.results-list li {
+    border-top: 1px solid #c8c8c8
+}
+
+.results-list a {
+    padding: 10px 15px;
+    line-height: 1.2;
+    display: block
+}
+
+.results-list a:hover {
+    color: #3c6d96;
+    text-decoration: none
+}
+
+.results-table {
+    padding: 15px;
+    overflow: auto!important
+}
+
+.results-table h3 {
+    margin-bottom: 15px
+}
+
+.results-table ul {
+    width: 100%!important
+}
+
+.results-table li {
+    float: left;
+    width: 33.333%;
+    height: 25px
+}
+
+.results-table a {
+    color: #1f384d
+}
+
+.results-table a:hover {
+    color: #3c6d96
+}
+
+.no-results {
+    margin-top: 15px
+}
+
+.no-results li {
+    border: none
+}
+
+.no-results h6 {
+    margin: 15px;
+    padding: 0;
+    line-height: 26px
+}
+
+.no-results .error {
+    width: 200px;
+    margin: 15px;
+    display: block
+}
+
+.no-results .full-width-button .cta {
+    padding-left: 0
+}
+
+.no-results .full-width-button a {
+    font-weight: 500;
+    font-size: 16px
+}
+
+.no-results .full-width-button a:hover {
+    color: #cd3e02
+}
+
+.panel-list {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    overflow: auto;
+    width: 100%
+}
+
+.panel-list,
+.panel-list ul {
+    font-size: 0;
+    position: relative
+}
+
+.panel-list .day,
+.panel-list .night {
+    cursor: pointer
+}
+
+.panel-list li {
+    font-size: 0;
+    display: inline-block;
+    vertical-align: middle;
+    border-left: 1px solid #c8c8c8;
+    height: 295px;
+    overflow: hidden;
+    position: relative;
+    padding: 15px
+}
+
+.panel-list h3 a {
+    padding: 0;
+    margin: 0 0 2px
+}
+
+.panel-list h4 {
+    color: #999;
+    text-transform: uppercase;
+    padding-top: 0;
+    font-size: 12px;
+    margin-top: 0
+}
+
+.panel-list .temp {
+    margin-top: 30px
+}
+
+.panel-list .cond {
+    color: #1f384d;
+    display: block;
+    font-size: 12px;
+    margin-top: 22px
+}
+
+.panel-list .icon {
+    margin-top: 25px
+}
+
+.panel-list .bt-more {
+    position: absolute;
+    color: #f05514;
+    bottom: 15px;
+    left:80px;
+    font-size: 11px
+}
+
+.panel-list .bt-more:hover {
+    color: #cd3e02
+}
+
+.control-bar {
+    background: #f7f6f5;
+    padding: 8px 15px;
+    font-size: 12px;
+    margin-top: 15px;
+    overflow: auto
+}
+
+.control-bar h3 {
+    float: left
+}
+
+.control-bar a {
+    font-size: 12px;
+    color: #f05514;
+    float: right;
+    position: relative
+}
+
+.control-bar .left-float {
+    float: left
+}
+
+.control-bar .right-float {
+    float: right
+}
+
+.control-bar strong {
+    font-weight: 700
+}
+
+.control-bar .left-arrow {
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/arrow-left-solid-orange.svg) no-repeat;
+    background-size: cover
+}
+
+.control-bar .left-arrow,
+.control-bar .right-arrow {
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    width: 15px;
+    height: 15px
+}
+
+.control-bar .right-arrow {
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/arrow-right-solid-orange.svg) no-repeat;
+    background-size: cover
+}
+
+.control-bar .arrow {
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/arrow-right-solid-orange.svg) no-repeat
+}
+
+.feed-controls {
+    background: #f7f6f5;
+    position: relative
+}
+
+.feed-controls a,
+.feed-controls span {
+    font-size: 12px
+}
+
+.feed-controls a {
+    color: #f05514
+}
+
+.feed-controls .lt {
+    float: left;
+    margin: 9px;
+    margin-left: 15px;
+    max-width: 350px
+}
+
+.feed-controls h3 {
+    font-size: 12px
+}
+
+.feed-controls .rt {
+    float: right;
+    position: relative;
+    top: -6px;
+    display: inline;
+    margin-right: 15px
+}
+
+.feed-controls strong {
+    font-weight: 700
+}
+
+.feed-controls .g-nav {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%)
+}
+
+.feed-controls .g-nav li {
+    display: inline-block;
+    padding-left: 30px;
+    vertical-align: top
+}
+
+.feed-controls .arrow-left,
+.feed-controls .arrow-right {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/arrow-right-solid-orange.svg) no-repeat;
+    background-size: cover;
+    vertical-align: middle
+}
+
+.feed-controls .arrow-left {
+    background-image: url(https://vortex.accuweather.com/adc2010/images/slate/arrow-left-solid-orange.svg)
+}
+
+#feed-tabs li {
+    width: 112px
+}
+
+#feed-tabs .day,
+#feed-tabs .night {
+    background: #f7f6f5
+}
+
+#feed-tabs .day:hover,
+#feed-tabs .day li:hover,
+#feed-tabs .night:hover,
+#feed-tabs .night li:hover {
+    background: #eaeaea
+}
+
+#feed-tabs .current:hover {
+    background: #fff
+}
+
+#feed-tabs .arrow-right {
+    right: 0;
+    background: red;
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/right-panel.png) no-repeat
+}
+
+#feed-tabs .arrow-left,
+#feed-tabs .arrow-right {
+    position: absolute;
+    top: 226px;
+    height: 44px;
+    width: 22px;
+    text-indent: -99999px;
+    z-index: 3
+}
+
+#feed-tabs .arrow-left {
+    left: 0;
+    background: red;
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/left-panel.png) no-repeat
+}
+
+#feed-tabs .feature-module #popular-locations .temp .large-temp,
+#feed-tabs .temp .large-temp,
+.feature-module #popular-locations #feed-tabs .temp .large-temp {
+    font-size: 32px
+}
+
+#feed-tabs .temp .small-temp {
+    color: #999;
+    font-size: 16px;
+    position: relative;
+    top: -10px
+}
+
+#feed-tabs .temp .small-temp.tonight {
+    color: #1f384d;
+    left: -15px
+}
+
+#feed-tabs .temp .temp-label.tonight {
+    text-transform: uppercase;
+    color: #999;
+    font-size: 10px;
+    position: relative;
+    top: 3px;
+    left: -10px
+}
+
+#feed-tabs .temp .temp-label.tonight.selected {
+    left: -1px
+}
+
+#feed-tabs .temp.three-digit .large-temp {
+    font-size: 25px
+}
+
+#feed-tabs .temp.three-digit .small-temp {
+    font-size: 14px
+}
+
+#feed-tabs .current {
+    background: #fff;
+    width: 155px;
+    padding-right: 10px;
+    border-bottom: 3px solid #f05514
+}
+
+#feed-tabs .current .icon {
+    margin-top: 18px
+}
+
+#feed-tabs .current .temp {
+    margin-top: 18px;
+    -webkit-font-smoothing: antialiased
+}
+
+#feed-tabs .current .temp .large-temp {
+    font-size: 45px
+}
+
+#feed-tabs .current .temp .small-temp {
+    font-size: 24px;
+    position: relative;
+    top: -14px
+}
+
+#feed-tabs .current .temp.three-digit .large-temp {
+    font-size: 32px
+}
+
+#feed-tabs .current .temp.three-digit .small-temp {
+    font-size: 16px;
+    top: -12px
+}
+
+#feed-tabs .current .cond {
+    font-size: 16px;
+    margin-top: 11px
+}
+
+#feed-tabs .current+li {
+    box-shadow: inset 7px 0 9px -11px #000
+}
+
+#feed-tabs.cityforecast .current {
+    border-bottom: none
+}
+
+#forecast-feed li {
+    width: 33.3333%
+}
+
+#forecast-feed li h3 {
+    padding: 0;
+    margin: 0 0 2px
+}
+
+#forecast-feed li .cond {
+    font-size: 16px
+}
+
+#forecast-feed li .icon {
+    margin-top: 20px
+}
+
+#forecast-feed li .temp {
+    margin-top: 20px;
+    -webkit-font-smoothing: antialiased
+}
+
+#forecast-feed li .feature-module #popular-locations .temp .large-temp,
+#forecast-feed li .temp .large-temp,
+.feature-module #popular-locations #forecast-feed li .temp .large-temp {
+    font-size: 45px
+}
+
+#forecast-feed li .temp .small-temp {
+    color: #999;
+    font-size: 24px;
+    position: relative;
+    top: -14px
+}
+
+#forecast-feed li .temp .realfeel {
+    clear: both;
+    display: block;
+    color: #999;
+    font-size: 13px
+}
+
+#forecast-feed li:hover {
+    background: #f7f6f5
+}
+
+.we-2-days li {
+    padding-bottom: 40px;
+    width: 50%!important;
+    height: 300px!important
+}
+
+.we-2-days span.cond {
+    margin-top: 12px
+}
+
+.we-3-days li {
+    height: 300px!important
+}
+
+.we-3-days .panel-list .cond {
+    margin-top: 12px!important
+}
+
+body#forecast-extended #feed-tabs.panel-list li {
+    height: 245px;
+    padding: 10px
+}
+
+body#forecast-extended #feed-tabs.panel-list li.current {
+    padding: 10px 15px
+}
+
+body#forecast-extended #feed-tabs.panel-list li.current .icon {
+    margin-top: 10px;
+    width: 80px;
+    height: 80px
+}
+
+body#forecast-extended #feed-tabs.panel-list li.current .cond,
+body#forecast-extended #feed-tabs.panel-list li.current .temp {
+    margin-top: 10px
+}
+
+body#forecast-extended #feed-tabs.panel-list li.current .large-temp {
+    font-size: 35px
+}
+
+body#forecast-extended #feed-tabs.panel-list li .icon,
+body#forecast-extended #feed-tabs.panel-list li .temp {
+    margin-top: 20px
+}
+
+body#forecast-extended #feed-tabs.panel-list li .cond {
+    margin-top: 10px
+}
+
+body#forecast-extended #feed-tabs .temp .large-temp {
+    font-size: 25px
+}
+
+body#forecast-extended #feed-tabs .temp .small-temp {
+    top: -7px
+}
+
+body#forecast-extended #feed-tabs .arrow-left,
+body#forecast-extended #feed-tabs .arrow-right {
+    top: 100px
+}
+
+div.brand-partner {
+    padding: 15px
+}
+
+div.brand-partner h4 {
+    font-size: 16px!important
+}
+
+div.brand-partner h4 a {
+    font-weight: 700!important;
+    background-image: none!important
+}
+
+div.brand-partner h4 a:hover {
+    color: #435163
+}
+
+div.brand-partner .first {
+    margin-bottom: 0!important
+}
+
+div.brand-partner .first a {
+    padding-bottom: 0!important
+}
+
+div.brand-partner p {
+    padding-top: 0!important
+}
+
+.panel-top-story h3 {
+    display: none
+}
+
+.panel-top-story #article img {
+    width: 100%
+}
+
+.panel-top-story .info {
+    position: relative;
+    padding: 15px
+}
+
+.panel-top-story p {
+    padding-bottom: 30px
+}
+
+.panel-top-story .more {
+    display: block;
+    font-size: 11px;
+    color: #f05514;
+    position: absolute;
+    bottom: 5px
+}
+
+.rise-modules {
+    width: 100%;
+    overflow: hidden
+}
+
+.rise-modules .row {
+    margin: 0 -4px
+}
+
+.time-period {
+    padding-right: 55px;
+    margin-top: 10px
+}
+
+.time-period li {
+    color: #999;
+    padding-top: 5px;
+    white-space: nowrap
+}
+
+.time-period span {
+    color: #1f384d
+}
+
+.time-period .duration {
+    margin-top: 20px
+}
+
+#feature-moon,
+#feature-sun {
+    padding: 0 4px;
+    float: left;
+    width: 50%
+}
+
+#feature-moon .inner,
+#feature-sun .inner {
+    padding: 15px;
+    background: #fff;
+    position: relative
+}
+
+#feature-moon h3,
+#feature-sun h3 {
+    padding-top: 0;
+    margin-top: 0
+}
+
+#feature-moon img,
+#feature-sun img {
+    display: none
+}
+
+#feature-moon .more,
+#feature-sun .more {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-size: 11px;
+    color: #f05514
+}
+
+#feature-moon .arrow,
+#feature-sun .arrow {
+    top: 4px
+}
+
+#feature-moon .icon,
+#feature-sun .icon {
+    position: absolute;
+    top: 20px;
+    height: 60px;
+    right: 20px;
+    background-position: 0 50%
+}
+
+#detail-now {
+    height: 350px;
+    margin-top: 5px
+}
+
+#detail-now .forecast {
+    display: block;
+    width: 60%;
+    float: left
+}
+
+#detail-now .temp {
+    margin: 30px 0 0 30px
+}
+
+#detail-now .feature-module #popular-locations .temp .large-temp,
+#detail-now .temp .large-temp,
+.feature-module #popular-locations #detail-now .temp .large-temp {
+    font-size: 45px;
+    display: block
+}
+
+#detail-now .temp .large-temp .small-temp {
+    font-size: 24px;
+    position: relative;
+    top: -14px;
+    font-weight: 300
+}
+
+#detail-now .temp .small-temp {
+    font-size: 16px;
+    color: #999
+}
+
+#detail-now .cond {
+    color: #1f384d;
+    padding: 15px 30px;
+    display: block;
+    font-size: 24px
+}
+
+#detail-now .icon {
+    margin: 30px 0 0 30px
+}
+
+#detail-now .more-info {
+    background-image: none!important;
+    width: 40%;
+    float: left;
+    background: #f7f6f5;
+    box-shadow: inset 7px 0 9px -11px #000;
+    height: 348px
+}
+
+#detail-now .more-info ul {
+    margin: 30px 0 0 30px
+}
+
+#detail-now .more-info li {
+    margin: 8px 0;
+    color: #999
+}
+
+#detail-now .more-info .wind {
+    color: #1f384d
+}
+
+#detail-now .wind-box-lg {
+    height: 70px;
+    width: 70px;
+    margin: 30px 0 0 30px;
+    display: block
+}
+
+#detail-now .wind-box-sm {
+    height: 80px;
+    width: 80px;
+    float: right;
+    margin-top: -5px
+}
+
+#detail-now .wind-compass {
+    background-size: 80px 80px;
+    width: 80px!important;
+    height: 80px!important
+}
+
+#detail-now .wind-point {
+    background-size: 40px 40px;
+    width: 80px!important;
+    height: 80px!important
+}
+
+#detail-day-night {
+    overflow: hidden;
+    margin: 0 -4px
+}
+
+#detail-day-night h4 {
+    margin-top: 0
+}
+
+#detail-day-night .wind-box-sm {
+    height: 66px;
+    width: 66px;
+    float: right;
+    margin-top: -5px
+}
+
+#detail-day-night .day,
+#detail-day-night .night {
+    padding: 0 4px;
+    float: left;
+    width: 50%
+}
+
+#detail-day-night .inner {
+    margin-top: 5px
+}
+
+#detail-day-night .info-wrapper {
+    padding: 15px 15px 20px;
+    height: 230px
+}
+
+#detail-day-night .icon {
+    height: 90px;
+    width: 90px;
+    float: right
+}
+
+#detail-day-night .cond {
+    display: block;
+    clear: both;
+    line-height: 20px;
+    margin-top: 15px;
+    color: #1f384d
+}
+
+#detail-day-night .temp {
+    margin-bottom: 20px;
+    width: 60%;
+    float: left
+}
+
+#detail-day-night .feature-module #popular-locations .temp .large-temp,
+#detail-day-night .temp .large-temp,
+.feature-module #popular-locations #detail-day-night .temp .large-temp {
+    font-size: 45px;
+    display: block
+}
+
+#detail-day-night .temp .setting {
+    font-size: 12px;
+    color: #999;
+    position: relative;
+    left: -14px;
+    text-transform: uppercase
+}
+
+#detail-day-night .temp .precip,
+#detail-day-night .temp .realfeel {
+    margin-top: 15px;
+    font-size: 16px;
+    display: block;
+    color: #999
+}
+
+#detail-day-night .temp .precip {
+    margin-top: 5px
+}
+
+#detail-day-night .content {
+    position: relative;
+    box-shadow: inset 0 7px 9px -11px;
+    background: #f7f6f5;
+    padding: 20px 15px 15px
+}
+
+#detail-day-night .content .stats {
+    clear: both
+}
+
+#detail-day-night .content .stats li {
+    padding-bottom: 10px;
+    color: #999;
+    font-size: 12px
+}
+
+#detail-day-night .content .wind-stats {
+    padding: 10px 0;
+    float: left;
+    width: 200px
+}
+
+#detail-day-night .content .wind-stats li {
+    text-align: left!important;
+    padding-bottom: 10px;
+    color: #1f384d;
+    font-size: 16px
+}
+
+#detail-day-night .content .more {
+    font-size: 11px;
+    color: #f05514;
+    position: absolute;
+    bottom: 10px
+}
+
+#detail-day-night .content .more .arrow {
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/arrow-left-orange.png) no-repeat;
+    background-size: cover
+}
+
+#detail-hourly .premium-info {
+    padding: 0 15px 15px
+}
+
+#detail-hourly .premium-info h2 {
+    padding-bottom: 10px
+}
+
+#detail-hourly .premium-info img {
+    display: none
+}
+
+#detail-hourly .premium-info p {
+    padding-bottom: 20px
+}
+
+#detail-hourly .premium-info a {
+    color: #f05514
+}
+
+.hourly-table {
+    padding: 15px 0
+}
+
+.hourly-table table {
+    margin-top: 15px;
+    text-align: left;
+    font-size: 13px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%
+}
+
+.hourly-table tr {
+    width: 100%;
+    height: 43px
+}
+
+.hourly-table th {
+    width: 110px;
+    padding-left: 15px;
+    color: #999
+}
+
+.hourly-table td {
+    width: auto;
+    font-size: 13px
+}
+
+.hourly-table span {
+    font-size: 13px;
+    display: block;
+    width: 50px;
+    padding: 10px 0;
+    line-height: 16px;
+    word-wrap: break-word
+}
+
+.hourly-table .icon-weather {
+    display: block;
+    margin-top: 15px
+}
+
+.hourly-table div,
+.hourly-table span {
+    color: #1f384d
+}
+
+.hourly-table thead th {
+    display: table-cell
+}
+
+.hourly-table thead tr {
+    height: 70px
+}
+
+.hourly-table thead div,
+.hourly-table thead td {
+    color: #999
+}
+
+.hourly-table tbody td,
+.hourly-table tbody th {
+    vertical-align: middle
+}
+
+.hourly-table tbody tr {
+    border-bottom: 1px solid #c8c8c8
+}
+
+.hourly-table tbody tr:last-of-type {
+    border: none
+}
+
+.hourly-table tbody span {
+    font-size: 13px
+}
+
+.hourly-control,
+.overview-hourly {
+    margin-top: 5px
+}
+
+.sky-hourly thead tr {
+    height: 30px
+}
+
+table.data th {
+    position: relative
+}
+
+table.data .chart-scale {
+    position: absolute;
+    right: 10px
+}
+
+.ac {
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -9999px;
+    top: -9999px
+}
+
+.precip-hourly tbody th {
+    vertical-align: bottom;
+    padding-bottom: 15px
+}
+
+.precip-hourly thead .day,
+.precip-hourly thead .night {
+    background: #fff;
+    height: 10px;
+    font-weight: 400;
+    padding: 0
+}
+
+.precip-hourly thead .day div,
+.precip-hourly thead .night div {
+    color: #999
+}
+
+.precip-hourly thead th {
+    vertical-align: bottom
+}
+
+.precip-hourly thead tr {
+    height: 1px!important
+}
+
+.precip-hourly td {
+    position: relative
+}
+
+.precip-hourly .day,
+.precip-hourly .night {
+    height: 100px;
+    vertical-align: bottom;
+    padding-bottom: 3px;
+    font-weight: 700
+}
+
+.precip-hourly .ice-block,
+.precip-hourly .rain-block,
+.precip-hourly .snow-block {
+    background: #999;
+    position: absolute;
+    bottom: 30px;
+    width: 30px
+}
+
+#feed-tabs.cityforecast {
+    margin-bottom: 5px
+}
+
+#feed-tabs.cityforecast li {
+    width: 200px;
+    height: inherit;
+    display: table-cell;
+    vertical-align: inherit
+}
+
+#feed-tabs.cityforecast li:hover {
+    background: rgba(20, 29, 38, .1);
+    cursor: pointer
+}
+
+#feed-tabs.cityforecast li.last {
+    width: 200px;
+}
+
+#feed-tabs.cityforecast .temp {
+    margin-top: 33px
+}
+
+#feed-tabs.cityforecast .temp .temp-label {
+    color: #999;
+    font-size: 12px;
+    position: relative;
+    top: 0;
+    left: -5px
+}
+
+#feed-tabs.cityforecast .temp .realfeel {
+    display: block;
+    color: #999;
+    font-size: 12px
+}
+
+#feed-tabs.cityforecast .cond {
+    font-size: 14px;
+    margin-top: 15px
+}
+
+#feed-tabs.cityforecast .icon {
+    margin-top: 28px;
+    margin-left: 53px;
+}
+
+#feed-tabs.cityforecast .current {
+    width: 255px;
+    padding-bottom: 55px
+}
+
+#feed-tabs.cityforecast .current .temp {
+    margin-top: 0
+}
+
+#feed-tabs.cityforecast .current .temp-label {
+    font-size: 21px;
+    left: -7px
+}
+
+#feed-tabs.cityforecast .current .cond {
+    font-size: 20px;
+    margin-top: 15px;
+    padding-bottom: 15px
+}
+
+#feed-tabs.cityforecast .current .icon {
+    margin-top: 0;
+    background-size: 80%;
+    background-position: 0 50%
+}
+
+#feed-tabs.cityforecast .current:hover {
+    background: rgba(20, 29, 38, .1)
+}
+
+#feed-tabs.cityforecast .full-width-button {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%
+}
+
+.feature-modules {
+    width: 100%;
+    overflow: hidden
+}
+
+.feature-modules .row {
+    margin: 0 -4px
+}
+
+#feature-radar,
+#feature-video {
+    padding: 0 4px;
+    float: left;
+    width: 50%
+}
+
+#feature-radar .inner,
+#feature-video .inner {
+    margin-top: 10px
+}
+
+#feature-radar h3 a,
+#feature-video h3 a {
+    display: block;
+    padding: 15px 0 15px 10px;
+    font-size: 16px;
+    text-decoration: none
+}
+
+#feature-radar h3 a:hover,
+#feature-video h3 a:hover {
+    color: #435163
+}
+
+#feature-radar .country-attrib,
+#feature-video .country-attrib {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    background-repeat: no-repeat
+}
+
+#feature-radar .vid-still,
+#feature-video .vid-still {
+    height: 166px;
+    position: relative;
+    overflow: hidden
+}
+
+#feature-radar .vid-still img,
+#feature-video .vid-still img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+#feature-radar .vid-still .vid-play-button,
+#feature-video .vid-still .vid-play-button {
+    position: absolute;
+    left: 125px;
+    top: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: #f05514
+}
+
+#feature-radar .vid-still .vid-play-button:after,
+#feature-video .vid-still .vid-play-button:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 20px;
+    top: 10px;
+    content: "";
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid transparent;
+    border-left: 16px solid #fff
+}
+
+#feature-radar .vid-still table.vid-headline-box,
+#feature-video .vid-still table.vid-headline-box {
+    position: absolute;
+    background: rgba(0, 0, 0, .5);
+    bottom: 0;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+    width: 100%
+}
+
+#feature-radar .vid-still table.vid-headline-box img,
+#feature-video .vid-still table.vid-headline-box img {
+    width: inherit;
+    max-height: 100%
+}
+
+#feature-radar .vid-still table.vid-headline-box .vid-name,
+#feature-video .vid-still table.vid-headline-box .vid-name {
+    font-size: 12px;
+    padding: 10px;
+    color: #fff
+}
+
+#feature-video.description .vid-still {
+    height: 146px
+}
+
+#feature-video.description .vid-description {
+    padding: 0 15px 15px;
+    line-height: 15px;
+    font-size: 13px;
+    padding-top: 5px;
+    color: #1f384d
+}
+
+#eventCrazyFrame {
+    width: 100%!important;
+    height: 1131px!important
+}
+
+#ecBody {
+    padding: 0;
+    margin: 0
+}
+
+#ecBody h3 {
+    padding-left: 15px;
+    padding-top: 5px;
+    float: left
+}
+
+#ecBody h4 {
+    padding: 0;
+    margin-top: 10px;
+    height: 65px!important
+}
+
+#ecBody h4 a {
+    display: block;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    line-height: 17px
+}
+
+#ecBody .rt {
+    float: right;
+    padding-top: 5px;
+    padding-right: 15px
+}
+
+#ecBody .weekend-events {
+    clear: both
+}
+
+#ecBody .weekend-events li {
+    display: block;
+    float: left;
+    width: 33.333%;
+    border-bottom: 1px solid #c8c8c8
+}
+
+#ecBody .weekend-events li.first-child {
+    border-right: 1px solid #c8c8c8
+}
+
+#ecBody .weekend-events li.last-child {
+    border-left: 1px solid #c8c8c8
+}
+
+#ecBody .weekend-events .dates {
+    padding: 0;
+    padding-left: 15px;
+    font-size: 12px
+}
+
+#ecBody .weekend-events .event-image {
+    width: 150px;
+    height: 100px;
+    background-size: cover;
+    display: block;
+    margin-left: 15px;
+    margin-bottom: 15px
+}
+
+#ecBody .weekend-events .copy {
+    padding: 0 15px 10px;
+    font-size: 12px;
+    line-height: 15px
+}
+
+#ecBody .weekend-events .event-details {
+    color: #f05514;
+    display: block;
+    font-size: 12px;
+    padding-left: 15px;
+    margin-bottom: 15px
+}
+
+#ecBody .events-row03 li {
+    border-bottom: none!important
+}
+
+#ecBody .g-nav {
+    padding-left: 15px;
+    padding-top: 15px;
+    float: left
+}
+
+#ecBody .g-nav li {
+    display: inline-block
+}
+
+#ecBody .g-nav li a {
+    color: #f05514;
+    font-size: 12px
+}
+
+#ecBody .g-nav li:after {
+    content: " | ";
+    position: relative;
+    top: 2px;
+    color: #1f384d
+}
+
+#ecBody .g-nav li:last-child:after {
+    content: ""
+}
+
+.panel-body,
+.panel-body-content,
+.panel-body-lt,
+.panel-body-rt,
+.strong .panel-body,
+.strong .panel-body-lt,
+.strong .panel-body-rt {
+    position: relative;
+    overflow: visible
+}
+
+#accutilemap #map-info,
+#location-menu-search #location-search-results .content ul li span,
+#location-menu-search .input-marker,
+#location-menu-search .input button i,
+i.mc-map-marker {
+    position: absolute;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 34px;
+    display: block
+}
+
+.loader {
+    position: relative;
+    width: 140px;
+    height: 5px
+}
+
+
+.loader .i1 {
+    left: 0;
+    -webkit-animation-delay: .52s;
+    animation-delay: .52s
+}
+
+.loader .i2 {
+    left: 20px;
+    -webkit-animation-delay: .65s;
+    animation-delay: .65s
+}
+
+.loader .i3 {
+    left: 40px;
+    -webkit-animation-delay: .78s;
+    animation-delay: .78s
+}
+
+.loader .i4 {
+    left: 60px;
+    -webkit-animation-delay: .91s;
+    animation-delay: .91s
+}
+
+.loader .i5 {
+    left: 80px;
+    -webkit-animation-delay: 1.04s;
+    animation-delay: 1.04s
+}
+
+.loader .i6 {
+    left: 100px;
+    -webkit-animation-delay: 1.17s;
+    animation-delay: 1.17s
+}
+
+.loader .i7 {
+    left: 120px;
+    -webkit-animation-delay: 1.3s;
+    animation-delay: 1.3s
+}
+
+.loader .i8 {
+    left: 140px;
+    -webkit-animation-delay: 1.43s;
+    animation-delay: 1.43s
+}
+
+@-webkit-keyframes a {
+    0% {
+        -webkit-transform: scale(1);
+        background-color: #aaa
+    }
+    to {
+        -webkit-transform: scale(.3);
+        background-color: #fff
+    }
+}
+
+@keyframes a {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        background-color: #aaa
+    }
+    to {
+        -webkit-transform: scale(.3);
+        transform: scale(.3);
+        background-color: #fff
+    }
+}
+
+#location-menu-search {
+    border-bottom: 1px solid #fafafa;
+    display: block;
+    position: relative
+}
+
+.mc-summary {
+    margin: 15px auto 0;
+    position: relative;
+    width: 100%
+}
+
+.mc-summary p {
+    font-size: 30px;
+    padding-right: 120px
+}
+
+.mc-summary span {
+    background-repeat: no-repeat;
+    background-position: 0 -499px;
+    min-width: 70px;
+    min-height: 28px;
+    display: block;
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+    padding-left: 30px;
+    color: #b0b0b0;
+    font-size: 11px;
+    cursor: pointer
+}
+
+.panel.minute-tabs .panel-body-content .minute-column li {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-top: none
+}
+
+.panel.minute-tabs .panel-body-content .minute-column li.first {
+    border-top: 1px solid #ddd
+}
+
+.panel.minute-tabs .panel-body-content .minute-column li span.time {
+    text-align: center;
+    width: 25%;
+    line-height: 70px
+}
+
+.panel.minute-tabs .panel-body-content .minute-column li span.icon {
+    background-color: #efefef;
+    background-repeat: no-repeat;
+    background-position: 50%
+}
+
+.panel.minute-tabs .panel-body-content .minute-column li span.type {
+    width: 46%
+}
+
+.panel.minute-tabs .panel-body-content .minute-column li span {
+    float: left;
+    display: block;
+    vertical-align: top;
+    height: 69px
+}
+
+.panel.minute-tabs .panel-body-content .minute-column li span.type p {
+    vertical-align: middle;
+    display: table-cell
+}
+
+.timeline {
+    text-align: center;
+    position: relative;
+    padding-top: 35px;
+    width: 100%;
+    margin: 0 auto
+}
+
+.timeline ul {
+    width: 100%;
+    font-size: 11px;
+    height: 32px;
+    background: #fff;
+    margin-bottom: 35px;
+    border: 1px solid #ccc;
+    zoom: 1
+}
+
+
+
+.timeline ul li.now b {
+    left: -9px
+}
+
+.timeline ul li.last b {
+    right: -40px
+}
+
+.spanwith {
+    width: .833%;
+    float: left;
+    position: relative!important
+}
+
+.mc-message-box {
+    display: none
+}
+
+
+.mincast-timeline-panel .update:before {
+    content: "";
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    background: url(https://vortex.accuweather.com/adc2010/images/slate/reload.svg);
+    margin-right: 3px;
+    position: relative;
+    background-size: cover;
+    top: 2px
+}
+
+.interactive-radar-module.mincast-interactive h2 {
+    margin: 0;
+    padding: 15px
+}
+
+#location-menu-search {
+    margin: 30px 0;
+    background: #edeceb;
+    width: 380px;
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid #999
+}
+
+#location-menu-search input {
+    width: 330px;
+    height: 32px;
+    padding-left: 15px;
+    border: none;
+    font-size: 12px;
+    color: #1f384d;
+    background: none;
+    outline: none;
+    -webkit-font-smoothing: antialiased
+}
+
+#location-menu-search .input-marker {
+    background: url(https://vortex.accuweather.com/adc2010/images/minutecast-map-pin.png) no-repeat;
+    left: inherit;
+    top: 6px;
+    right: 30px;
+    width: 20px;
+    height: 18px;
+    background-size: 67%
+}
+
+

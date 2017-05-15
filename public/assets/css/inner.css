@@ -254,13 +254,14 @@ DROP DOWN notification menu
 }
 
 .messages .message.left .avatar {
-    background-color: rgba(245, 136, 110, 0.42);
+    background: url('images/mugur.png') no-repeat center center;
     float: left;
+
 }
 
 .messages .message.left .text_wrapper {
     background-color: #fcfcfc;
-    margin-left: 20px;
+    margin-left: -60px;
 }
 
 .messages .message.left .text,
@@ -269,7 +270,7 @@ DROP DOWN notification menu
 }
 
 .messages .message.right .avatar {
-    background-color: rgba(253, 191, 104, 0.35);
+    background: url('images/chat-icon.png') no-repeat center center;
     float: right;
 }
 
@@ -284,9 +285,10 @@ DROP DOWN notification menu
 }
 
 .messages .message .avatar {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
     display: inline-block;
 }
 /* Message block */

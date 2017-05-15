@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     {{#if user}}
-
         <link rel="stylesheet" href="/assets/css/inner.css">
+        <link rel="stylesheet" href="/assets/css/weather.css" type="text/css" media="all" />
         <link rel="stylesheet" href="/assets/css/bootstrap.css">
         <link rel="stylesheet" href="/assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.min.js"></script>
         <script src="/assets/js/notify_counter.js" defer></script>
         <script src="/assets/js/switch.js" defer></script>
-
-
+        <script src="/assets/js/search.js" defer></script>
     {{else}}
 
         <link rel="stylesheet" href="/assets/css/style.css">
@@ -32,6 +31,7 @@
         <!-- CUSTOM STYLESHEET -->
         <link rel="stylesheet" href="/assets/css/style.css">
 
+        <link rel="stylesheet" href="/assets/css/weather.css" type="text/css" media="all" />
         <!-- RESPONSIVE FIXES -->
         <link rel="stylesheet" href="/assets/css/responsive.css">
         <!-- LOGO FONTS -->
@@ -65,7 +65,7 @@
                               <div class="col-lg-7 col-md-7 col-xs-1">
                                   <div id="custom-search-input">
                                       <div class="input-group ">
-                                          <input type="text" id="form-control" class="form-control" placeholder="Search" />
+                                          <input type="text" id="form-control" onkeyup="search()"class="form-control" placeholder="Search" />
                             <span class="input-group-btn">
                                 <button class="btn btn-default" id="search-btn" type="button">
                                     <span class="glyphicon glyphicon-search"></span>

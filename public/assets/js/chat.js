@@ -49,7 +49,13 @@
                   return sendMessage(getMessageText());
               }
           });
-          sendMessage('Hello Philip! :)');
+          sendMessage('Hello Florin :)');
+          sendMessage('Hi Murugus, como estais? :)');
+          sendMessage('Yo estoy bien, y tu?');
+          sendMessage('Bien, bien!');
+          sendMessage('Y tu que pasa?');
+          sendMessage('Trabajo con la thesis');
+          sendMessage('Por que? :)');
 
       });
   }.call(this));

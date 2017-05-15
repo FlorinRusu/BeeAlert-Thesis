@@ -11,7 +11,7 @@ var LocalStrategy = require('passport-local').Strategy;
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
 var http = require('http');
-
+mongoose.Promise = require('bluebird');
 
 mongoose.connect('mongodb://localhost/BeeAlert-Thesis');
 var db = mongoose.connection;

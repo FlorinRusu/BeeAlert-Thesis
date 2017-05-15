@@ -21,17 +21,11 @@ router.get('/feeds', function(req, res, data) {
     });
 });
 
-/*/!*     RSS FEEDS *!/
-router.get('/parser', function(req, res, data) {
-    request('http://www.accuweather.com/ro/md/chiinu/242405/daily-weather-forecast/242405?day=6', function (error, response, html) {
-        if (!error && response.statusCode == 200) {
-           console.log( cheerio.load(html));
-
-        }
+router.get('/energy', function(req, res, data) {
+    parser.parseURL('https://news.google.com/?output=rss', function(err, parsed) {
+        res.json(parsed.feed.entries);
     });
-
-});*/
-
+});
 
 
 router.get('/login',function(req,res){

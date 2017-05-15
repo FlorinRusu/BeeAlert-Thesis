@@ -25,7 +25,6 @@ $(function () {
 });
 
 
-
 //    //feed to parse
 //$(document).ready(function() {
 //

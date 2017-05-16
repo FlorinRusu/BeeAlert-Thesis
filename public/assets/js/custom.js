@@ -287,35 +287,6 @@ $("#subscribe").submit(function(e) {
     return false;
 });
 
-/* ============================
-   LOGIN-MODAL VALIDATION. 
-=============================== */
-// $("#login-modal").submit(function(e) {
-//     e.preventDefault();
-//     var data = {
-//         password: $("#lm-password").val(),
-//         email: $("#lm-email").val()
-//     };
-//
-//     if ( isValidEmail(data['email']) && (data['password'].length > 1) ) {
-//         $.ajax({
-//             type: "POST",
-//             url: "assets/php/subscribe.php",
-//             data: data,
-//             success: function() {
-//                 $('.lm-success').fadeIn(1000);
-//                 $('.lm-failed').fadeOut(500);
-//             }
-//         });
-//     } else {
-//         $('.lm-failed').fadeIn(1000);
-//         $('.lm-success').fadeOut(500);
-//     }
-//
-//     return false;
-// });
-
-
 /* ===========================================
    SIGNUP-MODAL VALIDATION. WITH CONFIRM PSW. 
 ============================================== */
@@ -519,40 +490,6 @@ $('.start-line').waypoint(function(direction){
         }
 });
 
-/* =======================================================================
-   SIGNUP-DIVIDER ANIMATED POLYGON BACKGROUND
-========================================================================== */
- /*   var container = document.getElementById('canvas-bg');
-    var renderer = new FSS.CanvasRenderer();
-    var scene = new FSS.Scene();
-    var light = new FSS.Light('323A45', '323A45');
-    var geometry = new FSS.Plane(2000, 1000, 15, 8);
-    var material = new FSS.Material('FFFFFF', 'FFFFFF');
-    var mesh = new FSS.Mesh(geometry, material);
-    var now, start = Date.now();
-
-    function initialise() {
-      scene.add(mesh);
-      scene.add(light);
-      container.appendChild(renderer.element);
-      window.addEventListener('resize', resize);
-    }
-
-    function resize() {
-      renderer.setSize(container.offsetWidth, container.offsetHeight);
-    }
-
-    function animate() {
-      now = Date.now() - start;
-      light.setPosition(300*Math.sin(now*0.001), 200*Math.cos(now*0.0005), 60);
-      renderer.render(scene);
-      requestAnimationFrame(animate);
-    }
-
-    initialise();
-    resize();
-    animate();
-*/
 /* ===========================================================
    BOOTSTRAP FIX FOR IE10 in Windows 8 and Windows Phone 8  
 ============================================================== */

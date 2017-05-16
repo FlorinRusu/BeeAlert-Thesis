@@ -17,12 +17,10 @@ function search(){
         if(p.innerHTML.toUpperCase().indexOf(filter) > -1){
             li[i].style.display ="";
             img[i].style.display="";
-
         }
         else{
             li[i].style.display ="none";
             img[i].style.display="none";
-
         }
     }
 }

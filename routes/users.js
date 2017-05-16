@@ -22,10 +22,11 @@ router.get('/feeds', function(req, res, data) {
 });
 
 router.get('/energy', function(req, res, data) {
-    parser.parseURL('https://news.google.com/?output=rss', function(err, parsed) {
+    parser.parseURL('http://www.gasnaturalfenosa.md/rssplanificate', function(err, parsed) {
         res.json(parsed.feed.entries);
     });
 });
+
 
 
 router.get('/login',function(req,res){

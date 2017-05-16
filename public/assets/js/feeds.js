@@ -20,8 +20,6 @@ $(function () {
             console.log(data);
         }
     });
-
-
 });
 
 

@@ -5,17 +5,10 @@
 /*Count and show mini-list of notifications*/
 $(function() {
 
-    $lungime = $(".dropdown-menu li").length;
-    $(".ring-badge").append($lungime);
-
-    if ($lungime == 0) {
-        $(".ring-badge").hide("fast");
-    }
-
     var $droplist = $("#drop-list");
     $droplist.css("display", $droplist.css("display") === 'none' ? '' : 'none');
 
-    $(".fa-bell").click(function() {
+    $(".notification").click(function() {
         $(".dropdown-menu").fadeToggle(300);
         return false;
     });

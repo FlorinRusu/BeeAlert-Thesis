@@ -63,7 +63,7 @@ DROP DOWN notification menu
     right: -5px;
 }
 
-.fa-bell .dropdown-menu {
+.notification .dropdown-menu {
     display: block;
     width: 180px;
     background-color: #fcfcfc;
@@ -362,6 +362,84 @@ DROP DOWN notification menu
 .eq-list .equakes:hover{
     background-color: whitesmoke;
 }
+
+
+/*   -   -   -   -   -   -   -
+    Move & bell sound
+-   -   -   -   -   -   -       */
+
+.notification {
+    display: inline-block;
+    position: relative;
+    font-size: 23px;
+}
+
+.notification::before {
+    display: block;
+    content: "\f0f3";
+    font-family: "FontAwesome";
+    transform-origin: top center;
+}
+
+.notification::after {
+    font-size: 10px;
+    font-weight: 700;
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    padding: 3px 5px;
+    line-height: 100%;
+    border: 1px #fff solid;
+    border-radius: 50%;
+    background: #fec20e;
+    opacity: 0;
+    content: attr(data-count);
+    transition-duration: 0.3s;
+}
+
+.notification.notify::before {
+    animation: ring 1.5s ease;
+}
+
+.notification.show-count::after {
+    transform: scale(1);
+    opacity: 1;
+}
+
+@keyframes ring {
+    0% {
+        -webkit-transform: rotate(35deg);
+        transform: rotate(35deg);
+    }
+    12.5% {
+        -webkit-transform: rotate(-30deg);
+        transform: rotate(-30deg);
+    }
+    25% {
+        -webkit-transform: rotate(25deg);
+        transform: rotate(25deg);
+    }
+    37.5% {
+        -webkit-transform: rotate(-20deg);
+        transform: rotate(-20deg);
+    }
+    50% {
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*   -   -   -   -   -   -   -
     Resizing window
 -   -   -   -   -   -   -       */

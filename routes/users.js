@@ -16,7 +16,7 @@ router.get('/register', function(req, res) {
 
 /*     RSS FEEDS */
 router.get('/feeds', function(req, res, data) {
-    parser.parseURL('http://www.emsc-csem.org/service/rss/rss.php?filter=yes&min_mag=3.5&region=ROMANIA&min_intens=0&max_intens=8', function(err, parsed) {
+    parser.parseURL('http://www.emsc-csem.org/service/rss/rss.php?filter=yes&min_mag=4&region=ROMANIA&min_intens=0&max_intens=8', function(err, parsed) {
         res.json(parsed.feed.entries);
     });
 });

@@ -47,25 +47,11 @@ body  {
 DROP DOWN notification menu
 -   -   -   -   -   -   -  -*/
 
-.fa-bell {
-    cursor: pointer;
-}
-
-.ring-badge {
-    background-color: #fec20e;
-    border-radius: 50%;
-    color: black;
-    padding: 3px 5px;
-    font-size: 10px;
-    position: absolute;
-    /* Position the badge within the relatively positioned button */
-    top: 0px;
-    right: -5px;
-}
 
 .notification .dropdown-menu {
     display: block;
     width: 180px;
+    font-size:12px;
     background-color: #fcfcfc;
 }
 
@@ -428,13 +414,6 @@ DROP DOWN notification menu
         transform: rotate(15deg);
     }
 }
-
-
-
-
-
-
-
 
 
 

@@ -2,6 +2,7 @@
  * Created by Florin on 5/2/2017.
  */
 
+    /* Switch between categories */
 var $contents = $('.tab-content');
 $contents.slice(1).hide();
 $('.tab').click(function() {

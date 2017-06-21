@@ -49,13 +49,13 @@
                   return sendMessage(getMessageText());
               }
           });
-          sendMessage('Hello Florin :)');
-          sendMessage('Hi Murugus, como estais? :)');
-          sendMessage('Yo estoy bien, y tu?');
-          sendMessage('Bien, bien!');
-          sendMessage('Y tu que pasa?');
-          sendMessage('Trabajo con la thesis');
-          sendMessage('Por que? :)');
+          sendMessage('Salut :)');
+          sendMessage('Salut, ai primit notificare? :)');
+          sendMessage('Despre seism de 4.3?');
+          sendMessage('Da nu s-a simțit!');
+          sendMessage('Cam multe sunt');
+          sendMessage('Da luna aceasta vreo 6');
+          sendMessage('Sperăm că nu se intensifică:)');
 
       });
   }.call(this));

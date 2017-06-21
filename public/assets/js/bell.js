@@ -1,5 +1,5 @@
-/**
- * Created by Florin on 5/18/2017.
+/*
+ Created by Florin on 5/18/2017.
  */
 
 var el = document.querySelector('.notification');

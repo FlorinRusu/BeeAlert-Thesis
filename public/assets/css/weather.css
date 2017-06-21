@@ -266,10 +266,10 @@ div.brand-partner {
     width: 60px
 }
 
-.icon[class*=-l] {
-    height: 75px;
-    width: 75px
-}
+/*.icon[class*=-l] {*/
+    /*height: 75px;*/
+    /*width: 75px*/
+/*}*/
 
 .icon[class*=-xl] {
     height: 130px;

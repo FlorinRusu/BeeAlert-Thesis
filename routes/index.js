@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. Slash is home page*/
 router.get('/', ensureAuthenticated,function(req, res,next) {
-  res.render('index');
+  res.render('layout');
 });
 
 function ensureAuthenticated(req,res,next){
@@ -11,7 +11,7 @@ function ensureAuthenticated(req,res,next){
       return next();
   }else{
  /*   req.flash('error_msg','You are not logged in');*/
-    res.redirect('/users/login');
+    res.redirect('/users/layout');
   }
 }
 

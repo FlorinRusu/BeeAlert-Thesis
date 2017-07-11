@@ -5,16 +5,16 @@
     <meta name="author" content="ThemeDept">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    {{#if user}}
-        <link rel="stylesheet" href="/assets/css/inner.css">
-        <link rel="stylesheet" href="/assets/css/weather.css" type="text/css" media="all" />
-        <link rel="stylesheet" href="/assets/css/bootstrap.css">
-        <link rel="stylesheet" href="/assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.min.js"></script>
-        <script src="/assets/js/notify_counter.js" defer></script>
-        <script src="/assets/js/switch.js" defer></script>
-        <script src="/assets/js/search.js" defer></script>
-    {{else}}
+
+        <!--<link rel="stylesheet" href="/assets/css/inner.css">-->
+        <!--<link rel="stylesheet" href="/assets/css/weather.css" type="text/css" media="all" />-->
+        <!--<link rel="stylesheet" href="/assets/css/bootstrap.css">-->
+        <!--<link rel="stylesheet" href="/assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">-->
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.min.js"></script>-->
+        <!--<script src="/assets/js/notify_counter.js" defer></script>-->
+        <!--<script src="/assets/js/switch.js" defer></script>-->
+        <!--<script src="/assets/js/search.js" defer></script>-->
+
 
         <link rel="stylesheet" href="/assets/css/style.css">
         <!-- FAVICON  -->
@@ -46,86 +46,12 @@
         <link rel="stylesheet" type="text/css" href="https://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css" />
         <script type="text/javascript" src="/assets/js/jquery-1.10.2.min.js"></script>
 
-    {{/if}}
+
 
 
 </head>
     <body>
-                    {{#if user}}
-                      <!-- ===================================================================
-                                When user is authenticated
-                      ======================================================================== -->
-                      <div class="header">
-                          <div class="row">
-                              <!-- Logo -->
-                              <div class="hd col-lg-1 col-md-1  col-xs-1">
-                                  <img src="/assets/images/beealert1.png" class="logo" alt="post img">
-                              </div>
-                              <!-- Search-->
-                              <div class="col-lg-7 col-md-7 col-xs-1">
-                                  <div id="custom-search-input">
-                                      <div class="input-group ">
-                                          <input type="text" id="form-control" onkeyup="search()"class="form-control" placeholder="Caută adresă" />
-                                            <span class="input-group-btn">
-                                                <button class="btn btn-default" id="search-btn" type="button">
-                                                    <span class="glyphicon glyphicon-search"></span>
-                                                </button>
-                                            </span>
-                                      </div>
-                                  </div>
-                              </div>
 
-
-                              <!-- Settings -->
-                              <div class="col-lg-4 col-md-4 col-sm-4">
-                                  <div class="settings text-center">
-                                      <div class="setting-1 ">
-                                          <p>{{user.username}}</p>
-                                      </div>
-
-                                      <div class="setting-2">
-                                          <div class="btn-group ">
-                                              <div class="notification">
-                                              <!--<i class="fa fa-bell" style="font-size:23px;">-->
-                                                  <!--<span  class="ring-badge"></span>-->
-                                                  <ul id ="drop-list" class="dropdown-menu">
-                                                      <div class="text-center" style="font-weight:bold; color:#3a2a28;">Notificări</div>
-                                                      <div class="divider"></div>
-                                                      <li> <a href="#">Cutremur Grade:5.0</a></li>
-                                                      <div class="divider"></div>
-                                                      <li><a href="#">Sistare apa, Asachi 20</a></li>
-                                                      <div class="divider"></div>
-                                                      <li><a href="#">Sistare gaze, Bucuresti 21</a></li>
-                                                      <div class="divider"></div>
-                                                      <li><a href="#">Ploi torențiale 24.0 °C</a></li>
-                                                  </ul>
-                                              <!--</i>-->
-                                              </div>
-                                          </div>
-                                      </div>
-
-                                      <div style="padding-top:2px;" class="setting-3">
-                                          <i class="fa fa-question-circle"></i>
-                                      </div>
-
-                                      <div style="padding-top:2px;" class="setting-4 ">
-                                          <a style="" href="/users/logout">
-                                              <i style="color:#3a2a28;" class="fa fa-share"></i>
-                                          </a>
-                                      </div>
-                                      <div style="padding-top:2px;" class="setting-4 ">
-                                          <a style="" href="/users/logout">
-                                              <i style="color:#3a2a28;" class="fa fa-sign-out"></i>
-                                          </a>
-                                      </div>
-                                  </div>
-                              </div>
-
-                          </div>
-                      </div>
-
-
-                    {{else}}
                      <!-- ===================================================================
                             When user is NOT authenticated
                       ======================================================================== -->
@@ -265,22 +191,449 @@
                          </div>
                          <!-- /End Modal Dialog -->
                      </div>
-                     <!-- /End Modal -->
-                    {{/if}}
+                     <!--&lt;!&ndash; /End Modal &ndash;&gt;-->
+                     <!-- =========================
+                              PRELOADER
+                         ========================== -->
+                     <div class="preloader">
+                         <div class="loader-container">
+                             <div class="img-logo"><img src="/assets/images/logo_white.png" /></div>
+                             <div class="signal"></div>
+                         </div>
+                     </div>
 
-                    {{{body}}} <!--Contents of inner or home pages-->
+                     <!-- =========================
+                              Hero-Section
+                         ========================== -->
+                     <section class="full-page" id="about">
 
-                    {{#if user}} <!-- For Inner account page use these scripts-->
-                        <script src="/assets/js/bootstrap.js"></script>
-                        <script src="/assets/js/feeds.js"></script>
-                        <script src="/assets/js/bell.js"></script>
-                        <script src="/assets/js/energy.js"></script>
-                        <script src="/assets/js/alert.js"></script>
-                        <script src="/assets/js/chat.js"></script>
-                        <script src="/assets/js/map.js"></script>
-                        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwKfBjk-dZfD2yr3rtNgGYzpMd_AEygrc&callback=initMap&language=ro&region=RO"></script>
+                         <div class="container vmiddle">
+                             <div class="row">
+                                 <div class="col-lg-7 col-xs-7">
+                                     <img src="/assets/images/beealert.png" class="img-responsive" alt=""> </div>
+                                 <div class="col-lg-5 col-xs-5">
+                                     <div class="hero-section">
 
-                    {{else}}<!--For HOME page use these files-->
+                                         <br>
+                                         <br>
+                                         <br>
+                                         <!-- Welcome - Hero Message -->
+                                         <h1 class="text-black">Informează-te la timp!<br>Notificări și alerte direct <br>de la
+                                             <span data-typer-targets="ApaCanal, ChișinăuGaz, UnionFenosa,Seismologie, Meteo"></span></h1>
+                                         <p class="text-black ">Înformația primită la timp îți poate salva viața!</p>
+
+                                         <!-- Learn More & Video Buttons -->
+                                         <div class="btn-box">
+
+                                             <!-- Video Lightbox on Click -->
+                                             <btn class="btn btn-nav pull-right" data-toggle="modal" href="" onclick=" ">Descarcă acum</btn>
+                                         </div>
+
+                                     </div>
+                                     <!-- /End Intro-Section -->
+                                 </div>
+                                 <!-- /End Col -->
+                             </div>
+                             <!-- /End Row -->
+                         </div>
+                         <!-- /End Container Hero-Section -->
+                     </section>
+                     </header>
+                     <!-- =========================
+                          /END HEADER
+                     ============================== -->
+
+                     <!-- =================================
+                          SECTION ABOUT - INTRO FEATURES
+                     ====================================== -->
+                     <section class="gray-bg full-page" id="features">
+                         <div class="container">
+                             <!-- Padding -->
+                             <div class="wrapper-lg">
+                                 <div class="row vertical-center">
+                                     <!-- Section Header Title -->
+                                     <div class="col-md-5 text-center">
+                                         <img src="/assets/images/beeframe.png" class="img-responsive" alt="">
+                                     </div>
+
+                                     <!-- Three Main Features with Icons -->
+                                     <div class="col-md-1"> </div>
+                                     <div class="col-md-6 intro-content text-justify features-text">
+                                         <!--  <div class="icon-lg">
+                                             <i class="icon icon-mobile"></i>
+                                         </div>-->
+                                         <h1 class="text-center">Oportunitățile oferite</h1>
+                                         <h4> - Obținerea unei surse de informare veridice, originale și accesibile</h4>
+                                         <h4> - Oportunitatea de a primi notificări 24/24 în mod rapid și dinamic</h4>
+                                         <h4> - Asisgurarea unui conținut bine prelucrat și delimitat pe categorii</h4>
+                                         <h4> - Utilizarea celor mai noi tehnologii pentru menținerea performanței înalte</h4>
+                                         <h4> - Acoperirea unei suprafețe mari a populației datorită produselor soft atât web cât și mobile</h4>
+                                         <h4> - Eficiență în alertare prin utilizarea atât semnalizării sonore cât și text</h4>
+
+
+                                     </div>
+                                 </div>
+                             </div>
+                             <!-- /End Wrapper -->
+                         </div>
+                         <!-- /End Container -->
+                     </section>
+                     <!-- =============================
+                          /END INTRO FEATURES
+                     ============================== -->
+
+                     <!-- ==================================================================================
+                          /Functionalitatea produsului
+                     ============================== -->
+
+                     <section class="schema full-page" id="concept">
+
+                         <div id="particles-js"></div>
+                         <script type="text/javascript">
+                             particlesJS.load('particles-js', '../config.json', function() {
+                                 console.log('callback - particles.js config loaded');
+                             });
+                         </script>
+
+                         <div class="container">
+                             <div id="particle-wrapper" class="wrapper-lg">
+                                 <div id="set-center" class="row">
+
+                                     <div class="col-lg-6 col-md-6 col-sm-6 intro-content">
+                                         <div class="sametext">
+                                             <h1>Concept</h1>
+                                             <h4 class="text-justify">
+                                                 Următorul process presupune prelucrarea datelor într-un mod rapid și eficient.
+                                                 Preluate din mai multe surse, notificările au menirea să acopere o gamă largă
+                                                 a necesităților de informare pentru fiecare cetățean indiferent de vârstă sau
+                                                 clasă socială. Utilizarea celor mai noi tehnologii oferă atât performanță
+                                                 ridicată cât și fiabilitate.
+                                             </h4>
+                                         </div>
+                                     </div>
+
+                                     <div class="col-lg-6 col-md-6  col-sm-6 intro-content">
+                                         <div class="img-class">
+                                             <img class="diagram" src="/assets/images/diagram.png" alt="">
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+
+
+                     </section>
+
+                     <!--   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -
+                                     CHART & LIVESTREAM BLOCK
+                     -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  -->
+
+                     <section class="gray-bg full-page" id="Live">
+
+                         <div class="col-md-7">
+                             <h3 class="h-daterecente">Date recente</h3>
+                             <div class="panel panel-default">
+                                 <div class="panel-body" >
+                                     <div id="chart1"></div>
+                                 </div>
+                             </div>
+                         </div>
+
+                         <script type="text/javascript" src="/assets/js/shield-ui.js"></script>
+                         <script type="text/javascript" src="/assets/js/chart.js"></script>
+
+                         <div class="col-md-5" >
+                             <h3  class="h-livestream">Livestream Vrancea</h3>
+                             <img class="i-livestream" src=" " alt="">
+                             <!--http://streaming.live-events.ro/live/5271f19a1048b.jpg?u=f2f3f9a589f7daa1128ae5da7a90069b149372799693971493728026232&mjpeg=1-->
+                         </div>
+
+                     </section>
+
+                     <!-- ==================================================
+
+                         Top Experts
+                     ======================================================= -->
+                     <section class="team light-bg full-page" id="team">
+                         <div class="container">
+                             <div class="wrapper-lg" id="team-position">
+                                 <div class="row">
+                                     <div class="col-md-12">
+                                         <h2>Membrii echipei</h2>
+                                         <p class="large">Aceștia sunt cei mai devotați și pasionați ingineri, care inspiră la fapte mărețe.</p>
+                                     </div>
+                                 </div>
+                                 <div class="row">
+                                     <!-- Team Box -->
+                                     <div class="col-sm-4 team-box centered">
+                                         <div class="team-img">
+                                             <img src="/assets/images/bussiness-man.png" class="img-responsive center-block" alt="">
+                                             <div class="img-overlay">
+                                                 <div class="img-icons">
+                                        <span class="icon-white">
+                                            <a href="#">
+                                                <i class="icon icon-facebook"></i>
+                                            </a>
+                                        </span>
+                                        <span class="icon-white">
+                                            <a href="#">
+                                                <i class="icon icon-twitter"></i>
+                                            </a>
+                                        </span>
+                                        <span class="icon-white">
+                                            <a href="#">
+                                                <i class="icon icon-linkedin"></i>
+                                            </a>
+                                        </span>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                         <div align="center">
+                                             <h4>Murug Alexandru</h4>
+                                             <p class="text-center">Dezvoltator Mobile</p>
+
+                                         </div>
+                                     </div>
+                                     <!-- Team Box -->
+                                     <div class="col-sm-4 team-box">
+                                         <div class="team-img">
+                                             <img src="/assets/images/bussiness-man.png" class="img-responsive center-block" alt="">
+                                             <div class="img-overlay">
+                                                 <div class="img-icons">
+                                        <span class="icon-white">
+                                            <a href="#">
+                                                <i class="icon icon-facebook"></i>
+                                            </a>
+                                        </span>
+                                        <span class="icon-white">
+                                            <a href="#">
+                                                <i class="icon icon-twitter"></i>
+                                            </a>
+                                        </span>
+                                        <span class="icon-white">
+                                            <a href="#">
+                                                <i class="icon icon-linkedin"></i>
+                                            </a>
+                                        </span>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                         <div align="center">
+                                             <h4 class="center-block">Rusu Florin</h4>
+                                             <p class="text-center">Dezvoltator Web</p>
+
+                                         </div>
+                                     </div>
+                                     <!-- Team Box -->
+                                     <div class="col-sm-4 team-box">
+                                         <div class="team-img">
+                                             <img src="/assets/images/bussiness-man.png" class="img-responsive center-block" alt="">
+                                             <div class="img-overlay">
+                                                 <div class="img-icons">
+                                        <span class="icon-white">
+                                            <a href="#">
+                                                <i class="icon icon-facebook"></i>
+                                            </a>
+                                        </span>
+                                        <span class="icon-white">
+                                            <a href="#">
+                                                <i class="icon icon-twitter"></i>
+                                            </a>
+                                        </span>
+                                        <span class="icon-white">
+                                            <a href="#">
+                                                <i class="icon icon-linkedin"></i>
+                                            </a>
+                                        </span>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                         <div align="center">
+                                             <h4>Javier Jahos</h4>
+                                             <p class="text-center">Expert sisteme distribuite</p>
+
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <!-- /End Row -->
+                             </div>
+                             <!-- End Wrapper -->
+                         </div>
+                         <!--/End Container -->
+                     </section>
+                     <!-- =============================
+                          /END TEAM SECTION
+                     ============================== -->
+
+
+                     <!--http://streaming.live-events.ro/live/5271f19a1048b.jpg?u=e2e2d09813b44d8fb99e2223feef829a149316005415641493160053205&mjpeg=1-->
+                     <!-- ==================================================
+                         NEWSLETTER AND SOCIAL DIVIDER
+                     ======================================================= -->
+                     <section class="newsletter color-bg " id="newsletter">
+                         <div class="container">
+                             <div class="wrapper-sm">
+                                 <div class="row">
+                                     <div class="col-md-6">
+                                         <!-- =========================
+                                             Social Icons
+                                         ============================== -->
+                                         <div class="table">
+                                             <div class="table-row">
+                                                 <div class="table-cell follow">
+                                                     <h5 class="table-title">Accesează</h5>
+                                                 </div>
+                                                 <div class="table-cell">
+                                                     <ul class="social-list">
+                                                         <li>
+                                                             <a href="#">
+                                                                 <i class="icon icon-facebook"></i>
+                                                             </a>
+                                                         </li>
+                                                         <li>
+                                                             <a href="#">
+                                                                 <i class="icon icon-twitter"></i>
+                                                             </a>
+                                                         </li>
+                                                         <li>
+                                                             <a href="#">
+                                                                 <i class="icon icon-googleplus"></i>
+                                                             </a>
+                                                         </li>
+                                                         <li>
+                                                             <a href="#">
+                                                                 <i class="icon icon-linkedin"></i>
+                                                             </a>
+                                                         </li>
+                                                     </ul>
+                                                 </div>
+                                                 <!-- /End Table-Cell -->
+                                             </div>
+                                             <!-- /End Table-Row -->
+                                         </div>
+                                         <!-- /End Table -->
+                                     </div>
+                                     <!-- /End Col -->
+
+                                     <div class="col-md-6">
+                                         <!-- =========================
+                                             MAILCHIMP SUBSCRIPTION FORM
+                                         ============================== -->
+                                         <form class="mailchimp-subscribe" role="form">
+                                             <div class="table">
+                                                 <div class="table-row">
+                                                     <div class="table-cell getnewsletter">
+                                                         <h5 class="table-title">Abonează-te</h5>
+                                                     </div>
+                                                     <div class="table-cell">
+                                                         <div class="input-group text-white">
+                                                             <!-- Input Form -->
+                                                             <input type="email" id="subscriber-email" name="email" placeholder="Introduce e-mail" class="form-control">
+                                                             <!-- Submit Button -->
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-white">Abonare</button>
+                                                </span>
+                                                         </div>
+                                                         <!-- /End Input Group -->
+                                                     </div>
+                                                     <!-- /End Table-Cell -->
+                                                 </div>
+                                                 <!-- /End Table-Row -->
+                                             </div>
+                                             <!-- /End Table -->
+                                             <div class="col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2">
+                                                 <!-- Notifications -->
+                                                 <p class="mc-success"></p>
+                                                 <p class="mc-failed"></p>
+                                             </div>
+                                         </form>
+
+
+                                     </div>
+                                     <!-- /End Col -->
+                                 </div>
+                                 <!-- /End Row -->
+                             </div>
+                             <!-- End Wrapper -->
+                         </div>
+                         <!-- /End Container -->
+                     </section>
+                     <!-- =============================
+                          /END NEWSLETTER SECTION
+                     ============================== -->
+
+
+                     <!-- ==================================================
+                         FOOTER
+                     ======================================================= -->
+                     <footer class="footer dark-bg" id="footer">
+                         <div class="container">
+                             <div class="wrapper-lg">
+                                 <div class="row">
+                                     <!-- Footer Left Col -->
+                                     <div class="col-md-5">
+                                         <!-- Logo -->
+                                         <a href="#top" class="navbar-brand img-logo scrollto" title="BeeMedia">
+                                             <img src="/assets/images/logo_white.png" alt="BeeMedia">
+                                         </a>
+                                     </div>
+                                     <!-- Footer Contact Col -->
+                                     <div class="col-md-3">
+                                         <h5 class="text-white">Contacte</h5>
+                                         <div class="contact-item">
+                                             <div class="contact-icon">
+                                                 <i class="icon icon_mail"></i>
+                                             </div>
+                                             <div class="contact-content">
+                                                 <a href="mailto:beemedia@bm.com">beealert@ba.com</a>
+                                             </div>
+                                         </div>
+                                         <div class="contact-item">
+                                             <div class="contact-icon">
+                                                 <i class="icon icon_pin"></i>
+                                             </div>
+                                             <div class="contact-content">
+                                                 Strada Studenților 9, Chișinău<br>
+
+                                             </div>
+                                         </div>
+                                         <div class="contact-item">
+                                             <div class="contact-icon">
+                                                 <i class="icon icon_phone"></i>
+                                             </div>
+                                             <div class="contact-content">
+                                                 +37369022245
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <!-- Footer Right Col: FACEBOOK PAGE -->
+                                     <div class="col-md-4">
+                                         <h5 class="text-white">Facebook</h5>
+
+                                         <div class="fb-page" data-href="https://www.facebook.com/BeeAlert-1697161937243290/?fref=ts"
+                                              data-height="130" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+                                              data-show-facepile="true"><blockquote cite="https://www.facebook.com/BeeAlert-1697161937243290/?fref=ts"
+                                                                                    class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/BeeAlert-1697161937243290/?fref=ts">
+                                             BeeAlert</a></blockquote></div>
+                                     </div>
+
+                                     <script src="/assets/js/facebook.js"></script>
+                                 </div>
+                                 <!-- Footer Menu and Copy -->
+                                 <div class="row">
+                                     <div class="col-md-12">
+                                         <p class="footer-copy">&copy; 2017 - BeeAlert. All Right Reserved!</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <!-- End Row -->
+                         </div>
+                         <!-- /End Wrapper -->
+                         <!-- /End Container -->
+                     </footer>
+                     </div>
+
+
 
                         <!--<script src="/assets/js/plugins/jquery1.11.0.min.js"></script>-->
                         <script src="/assets/js/plugins/bootstrap.min.js"></script>
@@ -290,6 +643,5 @@
                         <script src="/assets/js/plugins/twitter/tweetie.min.js"></script> <!--Raspunde de scroll incet in cascada-->
                         <script src="/assets/js/custom.js"></script>
 
-                    {{/if}}
     </body>
 </html>

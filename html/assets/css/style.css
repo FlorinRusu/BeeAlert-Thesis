@@ -555,6 +555,10 @@ p {
     background-size: cover;
 }
 
+.bm_title{
+    height:20px;
+    width:150px;
+}
 .header .overlay {
     height: 800px;
 }

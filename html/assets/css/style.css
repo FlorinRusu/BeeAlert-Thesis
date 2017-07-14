@@ -555,10 +555,11 @@ p {
     background-size: cover;
 }
 
-.bm_title{
-    height:20px;
-    width:150px;
+.bm_title {
+    height: 20px;
+    width: 150px;
 }
+
 .header .overlay {
     height: 800px;
 }
@@ -1976,6 +1977,19 @@ p {
     height: 50%;
 }
 
+.flex-container .block-caption > .caption-text.size-xs {
+    height: 75%;
+}
+
+.flex-container .block-caption > .caption-text.size-xs h2 {
+    font-size: 28px;
+}
+
+.flex-container .block-caption > .caption-text.size-xs p {
+    font-size: 18px;
+    line-height: 1.2em;
+}
+
 .flex-container a {
     color: #FFFFFF;
 }
@@ -2081,4 +2095,27 @@ p {
 
 .categories-list .tab-content {
     padding: 0
+}
+
+.grid-item {
+    width: 33.33333%;
+    padding: 7px;
+
+}
+
+.grid-post {
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 6px, rgba(0, 0, 0, 0.12) 0 1px 4px;
+    background: #fff;
+
+}
+
+.grid-post img {
+    max-width: 100%;
+}
+.grip-post-content {
+    padding: 15px;
+}
+.grip-post-content p {
+    font-size: 14px;
+    line-height: 1.4em;
 }

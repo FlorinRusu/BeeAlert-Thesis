@@ -1,10 +1,7 @@
-// $("#top-content-grid").mason({
-//     itemSelector: '.block',
-//     ratio: 1.2,
-//     sizes: [
-//         [3, 1],
-//         [2, 1],
-//     ],
-//     // gutter: 10,
-//     layout: 'fluid'
-// });
+var $grid = $('.grid').masonry({
+    // options
+    itemSelector: '.grid-item'
+});
+$grid.imagesLoaded().progress( function() {
+    $grid.masonry('layout');
+});

@@ -16,7 +16,7 @@
     <!-- GOOGLE FONTS -->
     <link href="http://fonts.googleapis.com/css?family=Raleway:300,400,600,700%7COpen+Sans:300,400,600,700%7CHandlee"
           rel="stylesheet">
-
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"   rel="stylesheet">
 
     <!-- RESPONSIVE FIXES -->
 
@@ -52,28 +52,39 @@
                         <i class="icon icon_menu"></i>
                     </button>
 
-                    <!-- Text-Logo -->
-                    <a href="#top" class="navbar-brand scrollto" title="BeeAlert">
-                        <img class="bm_title" src="assets/images/beemedia2.png">
-                    </a>
+
                 </div>
                 <!-- /End Navbar-Header -->
 
 
                 <!-- Navbar-Collapse -->
                 <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <!-- Menu Items -->
-                        <li><a href="#about" title="" class="scrollto">Despre noi</a></li>
-                        <li><a href="#features" title="" class="scrollto">Oportunități</a></li>
+                    <div class="row">
+                        <!-- Logo -->
+                        <div class="col-lg-2 col-md-2  col-xs-1">
+                            <img class="bm_title" src="assets/images/beemedia2.png">
+                        </div>
 
-                        <li><a href="#concept" title="" class="scrollto">Concept</a></li>
-                        <li><a href="#Live" title="" class="scrollto">Live</a></li>
-                        <li><a href="#team" title="" class="scrollto">Echipă</a></li>
-                        <li><a href="#footer" title="" class="scrollto">Contacte</a></li>
+                        <!-- Search-->
+
+                            <div class="col-lg-7 col-md-7 col-sm-6 ">
+                                <div class="s_bar">
+                                <div  id="imaginary_container">
+                                    <div class="input-group stylish-input-group">
+                                        <input  type="text" class="form-control"  placeholder="Search" >
+                                   <span class="input-group-addon">
+                                          <i class="fa fa-search" aria-hidden="true"></i>
+                                   </span>
+                                        </div>
+                                </div>
+                                </div>
+                            </div>
 
 
-                        <!-- Login and Signup Modal on click -->
+
+
+                <div class="col-lg-3 col-md-3 col-xs-1">
+                    <ul style=" margin-top: -10px;" class="nav navbar-nav navbar-right" >
                         <li><a class="btn btn-nav" data-toggle="modal" href="javascript:void(0)"
                                onclick="openLoginModal();">Autentificare</a></li>
                         <li><a class="btn btn-nav btn-signup" data-toggle="modal" href="javascript:void(0)"
@@ -82,9 +93,11 @@
                 </div>
                 <!-- /End Navbar-Collapse -->
             </div>
+                </div>
             <!-- /End Col -->
         </div>
         <!-- /End Row -->
+    </div>
     </div>
     <!-- /End Container -->
 </nav>
@@ -229,6 +242,7 @@
                     <p class="large">Acestea sunt cele mai populare noutăți la moment.</p>
                 </div>
             </div>
+
             <div class="row">
                 <div class="flex-container">
                     <div class="block block-1">
@@ -241,6 +255,7 @@
                             </div>
                         </a>
                     </div>
+
                     <div class="block block-2">
                         <a href="#" class="block-link">
                             <div class="block-caption" style="background-image: url(./assets/images/top-images/2.jpg)">

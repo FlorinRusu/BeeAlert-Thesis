@@ -564,29 +564,30 @@ p {
     height: 800px;
 }
 
-
-
 /* SEARCH BAR MA-FCKA  -------------------------------------------------*/
 
-.stylish-input-group .input-group-addon{
+.stylish-input-group .input-group-addon {
     background: white !important;
 
 }
 
-.s_bar{
+.s_bar {
     padding-left: 50px;
     padding-right: 50px;
 }
-.stylish-input-group .form-control{
-    border-right:0;
-    box-shadow:0 0 0;
-    height:30px !important;
-}
-.stylish-input-group button{
-    border:0;
 
-    background:transparent;
+.stylish-input-group .form-control {
+    border-right: 0;
+    box-shadow: 0 0 0;
+    height: 32px !important;
 }
+
+.stylish-input-group button {
+    border: 0;
+
+    background: transparent;
+}
+
 /*------------------------------------------*/
 /*   Navbar General Settings
 /*------------------------------------------*/
@@ -2070,7 +2071,7 @@ p {
 }
 
 .categories-list .nav-tabs {
-    border-bottom: 2px solid #DDD;
+    border-bottom: 2px solid transparent;
 }
 
 .categories-list .nav-tabs > li.active > a, .categories-list .nav-tabs > li.active > a:focus, .categories-list .nav-tabs > li.active > a:hover {
@@ -2135,10 +2136,61 @@ p {
 .grid-post img {
     max-width: 100%;
 }
+
 .grip-post-content {
     padding: 15px;
 }
+
 .grip-post-content p {
     font-size: 14px;
     line-height: 1.4em;
+}
+
+.navbar-btn-border-none .btn-nav {
+    border-color: transparent;
+}
+
+.navbar-btn-border-none .btn-nav.btn-signup:hover {
+    background: #fec20e;
+    color: #ffffff;
+    border-color: #fec20e;
+}
+
+.hero-section {
+    text-align: center;
+    margin: 150px 0 77px 0;
+}
+.categories-list {
+    margin-bottom: 40px;
+}
+.categories-list .nav-tabs {
+    text-align: center;
+}
+
+.categories-list .nav-tabs > li {
+    float: none;
+    display: inline-block;
+}
+.input-group-btn .btn-default {
+    border: 1px solid #ccc;
+    height: 32px !important;
+    font-weight: normal;
+    text-transform: capitalize;
+    padding: 0 9px;
+    font-size: 13px;
+    line-height: 32px;
+    margin-right: 0;
+}
+.input-group-btn.open .btn-default {
+    margin-bottom: 0;
+    border-bottom-right-radius: 0;
+}
+.input-group-btn .dropdown-menu {
+    margin-top: 0;
+    border-top-right-radius: 0;
+    border-top: 0;
+    box-shadow: none;
+    right: 1px;
+    border-color: #adadad;
+    border-top-left-radius: 0;
 }

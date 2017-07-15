@@ -16,7 +16,9 @@
     <!-- GOOGLE FONTS -->
     <link href="http://fonts.googleapis.com/css?family=Raleway:300,400,600,700%7COpen+Sans:300,400,600,700%7CHandlee"
           rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"   rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
 
     <!-- RESPONSIVE FIXES -->
 
@@ -67,37 +69,45 @@
 
                         <!-- Search-->
 
-                            <div class="col-lg-7 col-md-7 col-sm-6 ">
-                                <div class="s_bar">
-                                <div  id="imaginary_container">
+                        <div class="col-lg-7 col-md-7 col-sm-6 ">
+                            <div class="s_bar">
+                                <div id="imaginary_container">
                                     <div class="input-group stylish-input-group">
-                                        <input  type="text" class="form-control"  placeholder="Search" >
-                                   <span class="input-group-addon">
-                                          <i class="fa fa-search" aria-hidden="true"></i>
-                                   </span>
+                                        <input type="text" class="form-control" placeholder="Search">
+                                        <div class="input-group-btn">
+                                            <button type="button" class="btn btn-default dropdown-toggle"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Photo <span class="caret"></span></button>
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li><a href="#">Video</a></li>
+                                                <li><a href="#">Text</a></li>
+                                                <li><a href="#">Audio</a></li>
+                                            </ul>
                                         </div>
-                                </div>
+                                        <!--<span class="input-group-addon">-->
+                                        <!--<i class="fa fa-search" aria-hidden="true"></i>-->
+                                        <!--</span>-->
+                                    </div>
                                 </div>
                             </div>
+                        </div>
 
 
-
-
-                <div class="col-lg-3 col-md-3 col-xs-1">
-                    <ul style=" margin-top: -10px;" class="nav navbar-nav navbar-right" >
-                        <li><a class="btn btn-nav" data-toggle="modal" href="javascript:void(0)"
-                               onclick="openLoginModal();">Autentificare</a></li>
-                        <li><a class="btn btn-nav btn-signup" data-toggle="modal" href="javascript:void(0)"
-                               onclick="openRegisterModal();">Înregistrare</a></li>
-                    </ul>
+                        <div class="col-lg-3 col-md-3 col-xs-1">
+                            <ul style=" margin-top: -10px;" class="nav navbar-nav navbar-right navbar-btn-border-none">
+                                <li><a class="btn btn-nav btn-signup" data-toggle="modal" href="javascript:void(0)"
+                                       onclick="openLoginModal();"><i class="fa fa-upload"></i> Upload</a></li>
+                                <li><a class="btn btn-nav" data-toggle="modal" href="javascript:void(0)"
+                                       onclick="openLoginModal();">Autentificare</a></li>
+                            </ul>
+                        </div>
+                        <!-- /End Navbar-Collapse -->
+                    </div>
                 </div>
-                <!-- /End Navbar-Collapse -->
+                <!-- /End Col -->
             </div>
-                </div>
-            <!-- /End Col -->
+            <!-- /End Row -->
         </div>
-        <!-- /End Row -->
-    </div>
     </div>
     <!-- /End Container -->
 </nav>
@@ -193,29 +203,124 @@
 <!-- =========================
          Hero-Section
     ========================== -->
-<section class="full-page" id="about">
-
-    <div class="container vmiddle">
+<section id="about">
+    <div class="container">
         <div class="row">
-            <div class="col-lg-7 col-xs-7">
-                <img src="./assets/images/beeMedia1.png" class="img-responsive" alt=""></div>
-            <div class="col-lg-5 col-xs-5">
+            <div class="col-lg-12">
                 <div class="hero-section">
-
-                    <br>
-                    <br>
-                    <br>
                     <!-- Welcome - Hero Message -->
-                    <h1 class="text-black">Informează-te la timp!<br>Notificări și alerte direct <br>de la
-                        <span data-typer-targets="ApaCanal, ChișinăuGaz, UnionFenosa,Seismologie, Meteo"></span></h1>
-                    <p class="text-black ">Înformația primită la timp îți poate salva viața!</p>
+                    <h1 class="text-black">Informează-te la timp! Notificări și alerte direct <br>de la
+                        <span data-typer-targets="ApaCanal, ChișinăuGaz, UnionFenosa,Seismologie, Meteo"></span>
+                    </h1>
+                </div>
+                <div class="row categories-list">
+                    <div class="col-xs-12">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Breaking news</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Culture</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Politic</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Social life</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#lifestyle" aria-controls="settings" role="tab" data-toggle="tab">Lifestyle</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#sport" aria-controls="settings" role="tab" data-toggle="tab">Sport</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home">
+                                <div class="flex-container">
+                                    <div class="block block-1">
+                                        <a href="#" class="block-link">
+                                            <div class="block-caption"
+                                                 style="background-image: url(./assets/images/top-images/1.jpg)">
+                                                <div class="caption-text">
+                                                    <h2>Nice <span>Lily</span></h2>
+                                                    <p>Lily likes to play with crayons and pencils</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
 
-                    <!-- Learn More & Video Buttons -->
-                    <div class="btn-box">
+                                    <div class="block block-2">
+                                        <a href="#" class="block-link">
+                                            <div class="block-caption"
+                                                 style="background-image: url(./assets/images/top-images/2.jpg)">
+                                                <div class="caption-text size-xs">
+                                                    <h2>Nice <span>Lily</span></h2>
+                                                    <p>Lily likes to play with crayons and pencils</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="block block-3">
+                                        <a href="#" class="block-link">
+                                            <div class="block-caption"
+                                                 style="background-image: url(./assets/images/top-images/3.jpg)">
+                                                <div class="caption-text">
+                                                    <h2>Nice <span>Lily</span></h2>
+                                                    <p>Lily likes to play with crayons and pencils</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="block block-4-container">
+                                        <div class="flex-container direction-row">
+                                            <div class="block block-4 ">
+                                                <a href="#" class="block-link">
+                                                    <div class="block-caption"
+                                                         style="background-image: url(./assets/images/top-images/4.jpg)">
+                                                        <div class="caption-text size-xs">
+                                                            <h2>Nice <span>Lily</span></h2>
+                                                            <p>Lily likes to play with crayons and pencils</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="block block-5">
+                                                <a href="#" class="block-link">
+                                                    <div class="block-caption"
+                                                         style="background-image: url(./assets/images/top-images/2.jpg)">
+                                                        <div class="caption-text">
+                                                            <h2>Nice <span>Lily</span></h2>
+                                                            <p>Lily likes to play with crayons and pencils</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="block block-6">
+                                                <a href="#" class="block-link">
+                                                    <div class="block-caption"
+                                                         style="background-image: url(./assets/images/top-images/1.jpg)">
+                                                        <div class="caption-text size-xs">
+                                                            <h2>Nice <span>Lily</span></h2>
+                                                            <p>Lily likes to play with crayons and pencils</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                        <!-- Video Lightbox on Click -->
-                        <btn class="btn btn-nav pull-right" data-toggle="modal" href="" onclick=" ">Descarcă acum</btn>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile">profile</div>
+                            <div role="tabpanel" class="tab-pane" id="messages">messages</div>
+                            <div role="tabpanel" class="tab-pane" id="settings">settings</div>
+                            <div role="tabpanel" class="tab-pane" id="lifestyle">lifestyle</div>
+                            <div role="tabpanel" class="tab-pane" id="sport">sport</div>
+                        </div>
                     </div>
+                </div>
+                <div class="row">
 
                 </div>
                 <!-- /End Intro-Section -->
@@ -323,104 +428,6 @@
 <!-- =================================
      SECTION ABOUT - INTRO FEATURES
 ====================================== -->
-<section class="gray-bg" id="categories">
-    <div class="container">
-        <!-- Padding -->
-        <div class="wrapper-lg">
-            <div class="row categories-list">
-                <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active">
-                        <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Breaking news</a>
-                    </li>
-                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a>
-                    </li>
-                    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a>
-                    </li>
-                    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a>
-                    </li>
-                </ul>
-
-                <!-- Tab panes -->
-                <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active" id="home">
-                        <div class="grid">
-                            <div class="grid-item">
-                                <div class="grid-post">
-                                    <img src="./assets/images/top-images/1.jpg" alt="">
-                                    <div class="title">Some title</div>
-                                </div>
-                            </div>
-                            <div class="grid-item">
-                                <div class="grid-post">
-                                    <img src="./assets/images/top-images/2.jpg" alt="">
-                                    <div class="title">Some title</div>
-                                </div>
-                            </div>
-                            <div class="grid-item">
-                                <div class="grid-post">
-                                    <img src="./assets/images/top-images/1.jpg" alt="">
-                                    <div class="grip-post-content">
-                                        <h4>Title</h4>
-                                        <p>
-                                            Lorem ipsu,grid-sizergrid-sizergrid-sizerLorem i
-                                            psu,grid-sizergrid-sizergrid-sizerLorem ipsu,grid-siz
-                                            ergrid-sizergrid-sizer
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-item">
-                                <div class="grid-post">
-                                    <img src="./assets/images/top-images/3.jpg" alt="">
-                                    <div class="title">Some title</div>
-                                </div>
-                            </div>
-                            <div class="grid-item">
-                                <div class="grid-post">
-                                    <img src="./assets/images/top-images/4.jpg" alt="">
-                                    <div class="title">Some title</div>
-                                </div>
-                            </div>
-
-                            <div class="grid-item">
-                                <div class="grid-post">
-                                    <img src="./assets/images/top-images/3.jpg" alt="">
-                                    <div class="title">Some title</div>
-                                </div>
-                            </div>
-                            <div class="grid-item">
-                                <div class="grid-post">
-                                    <img src="./assets/images/top-images/4.jpg" alt="">
-                                    <div class="title">Some title</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="profile">Lorem Ipsum is simply dummy text of the printing
-                        and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                        1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-                        book.
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="messages">Lorem Ipsum is simply dummy text of the printing
-                        and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                        1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-                        book. It has survived not only five centuries, but also the leap into electronic typesetting,
-                        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-                        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-                        Aldus PageMaker including versions of Lorem Ipsum.
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="settings">Lorem Ipsum is simply dummy text of the printing
-                        and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                        1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-                        book. It has survived not only five centuries, but also the leap into electronic typesetting,
-                        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-                        sheets containing Lorem Ipsum passage..
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 <section class="gray-bg full-page" id="features">
     <div class="container">
         <!-- Padding -->

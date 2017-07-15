@@ -584,10 +584,28 @@ p {
 
 .stylish-input-group button {
     border: 0;
-
     background: transparent;
 }
 
+/*
+/*------------------------------------------*/
+/*   Navbar logo and money
+/*------------------------------------------*/
+.avatar{
+
+    height:32px;
+    width:32px;
+}
+.user .user_name{
+    font-size:16px;
+}
+.money .amount {
+    font-size:15px;
+}
+.money{
+    float:left;
+
+}
 /*------------------------------------------*/
 /*   Navbar General Settings
 /*------------------------------------------*/

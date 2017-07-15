@@ -5,7 +5,7 @@ var LocalStrategy = require('passport-local').Strategy;
 var parser = require('rss-parser');
 var xml = require('xml');
 var cheerio = require('cheerio');
-var request = require('request');
+// var request = require('request');
 var User = require('../models/user');
 
 /* Register */

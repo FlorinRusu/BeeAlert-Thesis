@@ -1,7 +1,7 @@
-/node_modules
-.idea/deployment.xml
-.idea/inspectionProfiles/
-.idea/php.xml
-.idea/workspace.xml
+node_modules
+.idea
+package-lock.json
+routes
+views
 BeeAlert-Thesis.iml
-/bin
+package.json

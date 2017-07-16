@@ -1971,15 +1971,89 @@ p {
 }
 
 .flex-container .block-5 {
-    flex: 1 1 40%;
-    -webkit-flex: 1 1 40%;
+    flex: 1 1 50%;
+    -webkit-flex: 1 1 50%;
 }
 
 
 .flex-container .block-6 {
-    flex: 1 1 60%;
+    flex: 1 1 50%;
+    -webkit-flex: 1 1 50%;
+}
+
+
+/*Style for Culture*/
+
+.flex-container .block-11 {
+    flex: 1 1 100%;
     -webkit-flex: 1 1 60%;
 }
+
+.flex-container .block-22 {
+    flex: 1 1 40%;
+    -webkit-flex: 1 1 40%;
+}
+
+.flex-container .block-33{
+    flex: 1 1 20%;
+    -webkit-flex: 1 1 20%;
+}
+
+
+
+.flex-container .block-44 {
+    flex: 1 1 50%;
+    -webkit-flex: 1 1 50%;
+}
+
+.flex-container .block-55 {
+    flex: 1 1 50%;
+    -webkit-flex: 1 1 50%;
+}
+
+
+.flex-container .block-66 {
+    flex: 1 1 50%;
+    -webkit-flex: 1 1 30%;
+}
+
+
+
+
+/*Style for Politic*/
+.flex-container .block-111 {
+    flex: 1 1 100%;
+    -webkit-flex: 1 1 60%;
+}
+
+.flex-container .block-222 {
+    flex: 1 1 40%;
+    -webkit-flex: 1 1 40%;
+}
+
+.flex-container .block-333{
+    flex: 1 1 20%;
+    -webkit-flex: 1 1 20%;
+}
+
+
+
+.flex-container .block-444 {
+    flex: 1 1 50%;
+    -webkit-flex: 1 1 70%;
+}
+
+.flex-container .block-555 {
+    flex: 1 1 50%;
+    -webkit-flex: 1 1 50%;
+}
+
+
+.flex-container .block-666 {
+    flex: 1 1 50%;
+    -webkit-flex: 1 1 50%;
+}
+
 
 .flex-container .block-caption {
     text-align: left;

@@ -5,4 +5,4 @@ We want to present you the Social Alert System, that includes smart notification
 
 
 
-                                                © 2017 - BeeAlert. All Right Reserved!
+                                        © 2017 - BeeAlert. All Right Reserved!
